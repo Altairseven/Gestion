@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{A8DE3A89-B2A8-433F-96E4-2C2C9E641330}</ProjectGuid>
+    <ProjectGuid>{0A281108-E5CB-4670-B1B5-D25284C1793E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <NoStandardLibraries>false</NoStandardLibraries>
     <AssemblyName>WindowsApplication</AssemblyName>
@@ -29,7 +29,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -47,9 +47,6 @@
   <PropertyGroup>
     <RootNamespace>Gestion</RootNamespace>
   </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationIcon>Symbol of the Gods.ico</ApplicationIcon>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -62,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
     <Content Include="Gestion.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -91,8 +89,8 @@
     <None Include=".git\logs\HEAD" />
     <None Include=".git\logs\refs\heads\master" />
     <None Include=".git\logs\refs\remotes\origin\HEAD" />
-    <None Include=".git\objects\pack\pack-92d0cdcb677c6baf3e8c5e014ca5ea1f08bfe4ed.idx" />
-    <None Include=".git\objects\pack\pack-92d0cdcb677c6baf3e8c5e014ca5ea1f08bfe4ed.pack" />
+    <None Include=".git\objects\pack\pack-e72d9a970d0dd11e2df7daf66b81b77121acea06.idx" />
+    <None Include=".git\objects\pack\pack-e72d9a970d0dd11e2df7daf66b81b77121acea06.pack" />
     <None Include=".git\packed-refs" />
     <None Include=".git\refs\heads\master" />
     <None Include=".git\refs\remotes\origin\HEAD" />
@@ -101,10 +99,7 @@
     <None Include=".vs\slnx.sqlite" />
     <None Include=".vs\VSWorkspaceState.json" />
     <None Include="App.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
-    </None>
+    <None Include="_config.yml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Busqueda_Dicotomica.cs">
