@@ -71,7 +71,7 @@ namespace Gestion {
 
                     //MessageBox.Show(bus.ToString());
                     if (bus == querry) {
-                        found = true;
+                        found = true; //aasd
                         ResIndex = mid;
                     }
                     else {
