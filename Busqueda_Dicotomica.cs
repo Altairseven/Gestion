@@ -73,7 +73,7 @@ namespace Gestion {
             int bus = 0;
             int posi = 0;
 
-            if (txtBus.Text != null) { //ESTE CHECKEO, ES PARA EVITAR QUE SI EL TEXTBOX ESTE VACIO, CRASHEE EL PROGRAMA.
+            if (txtBus.Text != "") { //ESTE CHECKEO, ES PARA EVITAR QUE SI EL TEXTBOX ESTE VACIO, CRASHEE EL PROGRAMA.
                 int buscado = Convert.ToInt32(this.txtBus.Text); //valor del textbox del costado, que en la imagen dice 29.
 
                 //for (int i = 0; i < t[i, 0]; i++) {
@@ -134,7 +134,9 @@ namespace Gestion {
 
 
             }
-
+            else {
+                MessageBox.Show("Ingrese un numero a buscar!!");
+            }
         }
     }
 }
