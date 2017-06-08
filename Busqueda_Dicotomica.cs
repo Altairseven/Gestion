@@ -78,9 +78,28 @@ namespace Gestion {
                 //    }
                 //}
 
+                while (comi <= fin && q == false) {
+                    medio = (comi + fin) / 2;
+                    bus = t[medio, 0];
+                    if (bus == buscado) {
+                        q = true;
+                        posi = t[medio, 1];
+                    }
+                    else {
+                        if (buscado < bus) { //if dado vuelta para que sea mas claro
+                            fin = medio - 1;
+                        }
+                        else {
+                            comi = medio + 1;
+                        }
+                    }
+                }
 
 
-                do {
+
+
+
+      /*          do {
                     medio = (comi + fin) / 2;
                     bus = t[medio, 0];
                     if (bus == buscado) {
@@ -98,9 +117,18 @@ namespace Gestion {
                     }
                 } while (q == false);
 
+    */
 
-                this.txtPos.Text = posi.ToString();
-                this.lstOrdenados.SelectedIndex = posi;
+
+            if (q == false) {
+                    MessageBox.Show("El numero Solicitado no esta en la lista!!");
+                }
+                else {
+                    this.txtPos.Text = posi.ToString();
+                    this.lstOrdenados.SelectedIndex = posi;
+                }
+
+
             }
 
         }
