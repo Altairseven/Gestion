@@ -113,6 +113,12 @@
     <Compile Include="Busqueda_Dicotomica.Designer.cs">
       <DependentUpon>Busqueda_Dicotomica.cs</DependentUpon>
     </Compile>
+    <Compile Include="Busqueda_Dicotomica_PorMi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda_Dicotomica_PorMi.Designer.cs">
+      <DependentUpon>Busqueda_Dicotomica_PorMi.cs</DependentUpon>
+    </Compile>
     <Compile Include="calculo_potencia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Busqueda_Dicotomica.resx">
       <DependentUpon>Busqueda_Dicotomica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busqueda_Dicotomica_PorMi.resx">
+      <DependentUpon>Busqueda_Dicotomica_PorMi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="calculo_potencia.resx">
       <DependentUpon>calculo_potencia.cs</DependentUpon>

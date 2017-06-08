@@ -30,10 +30,10 @@ namespace Gestion {
         }
 
         private void btnBurbuja_Click(object sender, EventArgs e) {
-            
+
             //Lo siguiente es lo que hay que hacer previamente al metodo de burbuja en si:
 
-                     //Para que cada vez q se aprete, primero limpie el contenido actual de la segunda listbox.
+            //Para que cada vez q se aprete, primero limpie el contenido actual de la segunda listbox.
                     lstOrdenados.Items.Clear();
 
                     int[] d = new int[20]; //Declaracion de array de 20 numeros int.
