@@ -1,0 +1,68 @@
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\Gestion.exe.config
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\Gestion.exe
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\Gestion.pdb
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\obj\Debug\Gestion.csprojResolveAssemblyReference.cache
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\obj\Debug\Gestion.Properties.Resources.resources
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\obj\Debug\Gestion.csproj.GenerateResource.Cache
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\obj\Debug\Gestion.exe
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\obj\Debug\Gestion.pdb
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\obj\Debug\Gestion.Maskedtextdownnuestro.resources
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\obj\Debug\Gestion.ejemplo_for.resources
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\obj\Debug\Gestion.calculo_potencia.resources
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\obj\Debug\Gestion.ejemplo_separar_par_impar.resources
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion - mio\Gestion\bin\Debug\Gestion.exe.config
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion - mio\Gestion\bin\Debug\Gestion.exe
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion - mio\Gestion\bin\Debug\Gestion.pdb
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion - mio\Gestion\obj\Debug\Gestion.csprojResolveAssemblyReference.cache
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion - mio\Gestion\obj\Debug\Gestion.calculo_potencia.resources
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion - mio\Gestion\obj\Debug\Gestion.ejemplo_for.resources
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion - mio\Gestion\obj\Debug\Gestion.ejemplo_separar_par_impar.resources
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion - mio\Gestion\obj\Debug\Gestion.Form1.resources
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion - mio\Gestion\obj\Debug\Gestion.Maskedtextdownnuestro.resources
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion - mio\Gestion\obj\Debug\Gestion.Properties.Resources.resources
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion - mio\Gestion\obj\Debug\Gestion.csproj.GenerateResource.Cache
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion - mio\Gestion\obj\Debug\Gestion.exe
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion - mio\Gestion\obj\Debug\Gestion.pdb
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\obj\Debug\Gestion.Euclides.resources
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\obj\Debug\Gestion.MaskedTB_Ejemplo.resources
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\obj\Debug\Gestion.csproj.Gestion.exe.config
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\Microsoft.Data.Tools.Schema.Sql.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\Microsoft.Data.Tools.Utilities.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\Microsoft.Build.Framework.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\Microsoft.SqlServer.TransactSql.ScriptDom.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\Microsoft.Build.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\System.Collections.Immutable.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\System.Threading.Tasks.Dataflow.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\cs\Microsoft.Build.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\de\Microsoft.Build.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\en\Microsoft.Build.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\es\Microsoft.Build.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\fr\Microsoft.Build.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\it\Microsoft.Build.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\ja\Microsoft.Build.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\ko\Microsoft.Build.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\pl\Microsoft.Build.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\pt-BR\Microsoft.Build.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\ru\Microsoft.Build.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\tr\Microsoft.Build.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\zh-Hans\Microsoft.Build.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\zh-Hant\Microsoft.Build.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\Gestion.mdf
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\bin\Debug\Gestion_log.ldf
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\obj\Debug\Gestion.Prueba_ado.resources
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\obj\Debug\Gestion.FormButton.resources
+D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\obj\Debug\Gestion.Main.resources
