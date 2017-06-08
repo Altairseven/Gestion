@@ -14,6 +14,10 @@ namespace Gestion {
             InitializeComponent();
         }
 
+        //El codigo escrito en el metodo Load y el btnBurbuja_Click, son lo mismo que los encontrados en
+        // el formulario metodo burbuja, pero en el mismo, esta mejor comentado.
+
+
         private void Busqueda_Dicotomica_Load(object sender, EventArgs e) {
             Random r = new Random();
             for (int i = 0; i < 20; i++) {
@@ -98,29 +102,29 @@ namespace Gestion {
 
 
 
-
-      /*          do {
-                    medio = (comi + fin) / 2;
-                    bus = t[medio, 0];
-                    if (bus == buscado) {
-                        q = true;
-                        posi = t[medio, 1];
-                    }
-                    else {
-                        if (buscado < bus) //if dado vuelta para que sea mas claro
-                        {
-                            fin = medio - 1;
+                /*  While Hecho Por el profesor, no podia detectar si el numero no estaba, y el bucle quedaba abierto
+                   do {
+                        medio = (comi + fin) / 2;
+                        bus = t[medio, 0];
+                        if (bus == buscado) {
+                            q = true;
+                            posi = t[medio, 1];
                         }
                         else {
-                            comi = medio + 1;
+                            if (buscado < bus) //if dado vuelta para que sea mas claro
+                            {
+                                fin = medio - 1;
+                            }
+                            else {
+                                comi = medio + 1;
+                            }
                         }
-                    }
-                } while (q == false);
-
-    */
+                    } while (q == false);
+                */
 
 
-            if (q == false) {
+
+                if (q == false) {
                     MessageBox.Show("El numero Solicitado no esta en la lista!!");
                 }
                 else {

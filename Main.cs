@@ -17,51 +17,29 @@ namespace Gestion
             InitializeComponent();
         }
 
-        public class getforms
-        {
-            System.Reflection.Assembly myAssembly = System.Reflection.Assembly.GetEntryAssembly();
-            Type[] Types;
-            public List<Type> tipo;
+        private class get_forms {
+            public List<Type> Formlist = new List<Type>();
 
-            public getforms() {
-                Types = myAssembly.GetTypes();
-                tipo = new List<Type>();
-                foreach (Type myType in Types)
-                {
+            public get_forms() {
+                System.Reflection.Assembly myAssembly = System.Reflection.Assembly.GetEntryAssembly();
+                Type[] Types = myAssembly.GetTypes();
+                Formlist.Clear();
+                foreach (Type myType in Types) {
                     if (myType.BaseType == null)
                         continue;
                     if (myType.BaseType.FullName == "System.Windows.Forms.Form")
-                    {
-                        tipo.Add(myType);
-                    }
-
+                        Formlist.Add(myType);
                 }
-
             }
         }
-            private void Main_Load(object sender, EventArgs e){
-            getforms forms = new getforms(); 
-            List<Button> buttons = new List<Button>();
-            TableLayoutPanel tbly = new TableLayoutPanel();
-            Controls.Add(tbly);
-            tbly.Anchor = (AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Left | AnchorStyles.Bottom);
-            tbly.Width = Width;
-            tbly.Height = this.Height - 10;
-            
-            tbly.ColumnCount = 1;
-            tbly.Location = new Point((this.Width - tbly.Width) / 2, 10);
-            //tbly.BackColor = Color.Cyan;
-
-            
-            int xform = forms.tipo.Count;
-            for (int i = 0; i < forms.tipo.Count; i++) {
-                if (forms.tipo[i].ToString() != "Gestion.Main") {
-                    FormButton newButton = new FormButton(forms.tipo[i].ToString(), forms.tipo[i]);
-                    newButton.Width = tbly.Width - 20;
-                    newButton.button1.Width = tbly.Width - 20;
-                    tbly.Controls.Add(newButton);
+        private void Main_Load(object sender, EventArgs e){
+            get_forms forms = new get_forms();
+            foreach (Type form in forms.Formlist) {
+                if (form.Name != "Main") {
+                    FormButton newbutton = new FormButton(form.Name, form);
+                    newbutton.Width = TLYP.Width - 7;
+                    TLYP.Controls.Add(newbutton);
                 }
-
             }
 
 
