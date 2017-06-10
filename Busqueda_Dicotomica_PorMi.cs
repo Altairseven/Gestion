@@ -54,42 +54,40 @@ namespace Gestion {
             textBox3.Text = "";
 
             int querry;
-            bool found = false;
-            int start = 0;
-            int end;
-            int mid = 0;
-            int bus = 0;
-            int ResIndex = 0;
-            int temp;
+
             if (int.TryParse(textBox2.Text, out querry) == false)
                 MessageBox.Show("Ingrese un numero a buscar");
             else {
-                end = listBox1.Items.Count;
-                while (start < end && found == false) {
-                    mid = (start + end) / 2;
-                    bus = Convert.ToInt32(listBox1.Items[mid]);
+                bool q = false;
+                int comi = 0;
+                int fin = listBox1.Items.Count;
+                int medio = 0;
+                int bus = 0;
+                int posi = 0;
 
-                    //MessageBox.Show(bus.ToString());
-                    if (bus == querry) {
-                        found = true; //aasd
-                        ResIndex = mid;
-                    }
-                    else {
-                        if (querry < bus) { //if dado vuelta para que sea mas claro
-                            end = mid - 1;
+                while (comi <= fin && q == false) {
+                        medio = (comi + fin) / 2;
+                        bus = Convert.ToInt32(listBox1.Items[medio]);
+                        if (bus == querry) {
+                            q = true;
+                            posi = medio;
                         }
                         else {
-                            start = mid + 1;
+                            if (querry < bus) {
+                                fin = medio - 1;
+                            }
+                            else {
+                                comi = medio + 1;
+                            }
                         }
                     }
-                }
-                if (found == false) {
+                    if (q == false) {
                     MessageBox.Show("El numero Solicitado no esta en la lista!!");
-                }
-                else {
-                    this.textBox3.Text = ResIndex.ToString();
-                    this.listBox1.SelectedIndex = ResIndex;
-                }
+                    }
+                    else {
+                        this.textBox3.Text = posi.ToString();
+                        this.listBox1.SelectedIndex = posi;
+                    }
 
 
             }
