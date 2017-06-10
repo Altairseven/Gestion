@@ -33,8 +33,6 @@ namespace Gestion {
                     for (int j = i + 1; j <= cantidad -1; j++) { // el segundo va a ir de 1 a 19, osea del segundo al ultimo.
                         if (d[i] > d[j]) { //si el valor del primer index es mayor que el del segundo. 
 
-                            //intercambio los valores:
-
                             aux = d[i];   // Guardas el primero en aux,  
                             d[i] = d[j];  // Asignas el segundo en el primero  
                             d[j] = aux;   // guardas el aux en el segundo.  
@@ -44,53 +42,53 @@ namespace Gestion {
                 foreach (int number in d) {
                     listBox1.Items.Add(number.ToString());
                 }
-
             }
-            
-            
         }
 
+        //make a 2d array with indexes and values of a listbox
+        private int[,] lstbox_to_array(ListBox lst) {
+            int[,] array = new int[lst.Items.Count,2];
+            for (int i = 0; i < lst.Items.Count; i++) {
+                array[i,0] = i;
+                array[i, 1] = Convert.ToInt32(lst.Items[i]);
+            }
+            return array;
+        }
         private void button2_Click(object sender, EventArgs e) {
             textBox3.Text = "";
+            int[,] arr = lstbox_to_array(listBox1);
+            int[] sbounds = new int[2] { 0, listBox1.Items.Count}; //Stores the bounds of the search.
+            int middle; //for storing midpoint of searchbounds
+            int val; //for storing the value of midpoint 
+            int querry; //Number searched.
+            int resultindex = 0; //for storing the index of the result
+            bool found = false; //inficates if the search has finished.
 
-            int querry;
-
-            if (int.TryParse(textBox2.Text, out querry) == false)
-                MessageBox.Show("Ingrese un numero a buscar");
+            if (int.TryParse(textBox2.Text, out querry) == false) {
+                MessageBox.Show("Debe Ingresar un valor numerico");
+            }
             else {
-                bool q = false;
-                int comi = 0;
-                int fin = listBox1.Items.Count;
-                int medio = 0;
-                int bus = 0;
-                int posi = 0;
-
-                while (comi <= fin && q == false) {
-                        medio = (comi + fin) / 2;
-                        bus = Convert.ToInt32(listBox1.Items[medio]);
-                        if (bus == querry) {
-                            q = true;
-                            posi = medio;
-                        }
-                        else {
-                            if (querry < bus) {
-                                fin = medio - 1;
-                            }
-                            else {
-                                comi = medio + 1;
-                            }
-                        }
+                while (found == false && sbounds[0] <= sbounds[1]) {
+                    middle = (sbounds[0] + sbounds[1]) / 2;
+                    val = arr[middle, 1];
+                    if (val == querry) {
+                        resultindex = middle;
+                        found = true;
                     }
-                    if (q == false) {
+                    else if (val > querry)
+                        sbounds[1] = middle - 1;
+                    else
+                        sbounds[0] = middle + 1;
+                }
+                if (found == false) {
                     MessageBox.Show("El numero Solicitado no esta en la lista!!");
-                    }
-                    else {
-                        this.textBox3.Text = posi.ToString();
-                        this.listBox1.SelectedIndex = posi;
-                    }
-
-
+                }
+                else {
+                    textBox3.Text = resultindex.ToString();
+                    listBox1.SelectedIndex = resultindex;
+                }
             }
         }
     }
 }
+
