@@ -15,13 +15,7 @@ namespace Gestion {
 
 
         
-        public bool ByMe {
-            get {
-                return true;
-            }
-            set {
-            }
-        }
+
         
 
         private void Busqueda_Dicotomica_PorMi_Load(object sender, EventArgs e) {
@@ -86,7 +80,7 @@ namespace Gestion {
         private void button2_Click(object sender, EventArgs e) {
             textBox3.Text = "";
             int[,] arr = lstbox_to_array(listBox1);
-            int[] sbounds = new int[2] { 0, listBox1.Items.Count }; //Stores the bounds of the search.
+            int[] sbounds = new int[2] { 0, listBox1.Items.Count -1 }; //Stores the bounds of the search.
             int middle; //for storing midpoint of searchbounds
             int val; //for storing the value of midpoint 
             int querry; //Number searched.
