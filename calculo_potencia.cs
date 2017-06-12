@@ -17,6 +17,10 @@ namespace Gestion
             InitializeComponent();
         }
 
+        public bool ByMe() {
+            return true;
+        }
+
         private void calculo_potencia_Load(object sender, EventArgs e)
         {
             this.txt_base.maskedTextBox1.Mask = "99";

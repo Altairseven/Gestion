@@ -12,28 +12,11 @@ namespace Gestion
 {
     public partial class Main : Form
     {
-        public Main()
-        {
+        public Main(){
             InitializeComponent();
         }
-
-        private class get_forms {
-            public List<Type> Formlist = new List<Type>();
-
-            public get_forms() {
-                System.Reflection.Assembly myAssembly = System.Reflection.Assembly.GetEntryAssembly();
-                Type[] Types = myAssembly.GetTypes();
-                Formlist.Clear();
-                foreach (Type myType in Types) {
-                    if (myType.BaseType == null)
-                        continue;
-                    if (myType.BaseType.FullName == "System.Windows.Forms.Form")
-                        Formlist.Add(myType);
-                }
-            }
-        }
         private void Main_Load(object sender, EventArgs e){
-            get_forms forms = new get_forms();
+            Get_Forms forms = new Get_Forms();
             foreach (Type form in forms.Formlist) {
                 if (form.Name != "Main") {
                     FormButton newbutton = new FormButton(form.Name, form);

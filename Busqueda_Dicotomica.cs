@@ -17,6 +17,13 @@ namespace Gestion {
         //El codigo escrito en el metodo Load y el btnBurbuja_Click, son lo mismo que los encontrados en
         // el formulario metodo burbuja, pero en el mismo, esta mejor comentado.
 
+        public static bool ByMe {
+            get {
+                return true;
+            }
+            set {
+            }
+        }
 
         private void Busqueda_Dicotomica_Load(object sender, EventArgs e) {
             Random r = new Random();

@@ -12,6 +12,18 @@ namespace Gestion {
         public Busqueda_Dicotomica_PorMi() {
             InitializeComponent();
         }
+
+
+        
+        public bool ByMe {
+            get {
+                return true;
+            }
+            set {
+            }
+        }
+        
+
         private void Busqueda_Dicotomica_PorMi_Load(object sender, EventArgs e) {
 
         }

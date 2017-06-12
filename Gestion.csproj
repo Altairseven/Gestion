@@ -144,11 +144,18 @@
     <Compile Include="FormButton.Designer.cs">
       <DependentUpon>FormButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="Get_Forms.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MaskedTB_Ejemplo.cs">
       <SubType>Form</SubType>
@@ -210,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MaskedTB_Ejemplo.resx">
       <DependentUpon>MaskedTB_Ejemplo.cs</DependentUpon>

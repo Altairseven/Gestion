@@ -40,14 +40,14 @@
             this.TLYP.Name = "TLYP";
             this.TLYP.RowCount = 1;
             this.TLYP.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.TLYP.Size = new System.Drawing.Size(200, 300);
+            this.TLYP.Size = new System.Drawing.Size(200, 449);
             this.TLYP.TabIndex = 0;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(200, 300);
+            this.ClientSize = new System.Drawing.Size(200, 449);
             this.Controls.Add(this.TLYP);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
