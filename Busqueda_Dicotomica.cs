@@ -73,7 +73,6 @@ namespace Gestion {
                 t[i, 1] = i;
             }
             bool q = false;
-            bool IsInList = true;
             int comi = 0;
             int fin = 19;
             int medio = 0;

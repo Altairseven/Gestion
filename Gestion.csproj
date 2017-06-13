@@ -102,6 +102,12 @@
     <None Include="_config.yml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ABM_Grilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM_Grilla.Designer.cs">
+      <DependentUpon>ABM_Grilla.cs</DependentUpon>
+    </Compile>
     <Compile Include="Busqueda_Dicotomica.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +200,9 @@
     <Compile Include="Tools.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ABM_Grilla.resx">
+      <DependentUpon>ABM_Grilla.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Busqueda_Dicotomica.resx">
       <DependentUpon>Busqueda_Dicotomica.cs</DependentUpon>
     </EmbeddedResource>

@@ -18,6 +18,10 @@ namespace Gestion {
             button1.Text = bttext;
             form = formulario;
         }
+        public FormButton() {
+            InitializeComponent();
+        }
+
 
         private void button1_Click(object sender, EventArgs e) {
             Form myObject = (Form)Activator.CreateInstance(Type.GetType(form.ToString()));

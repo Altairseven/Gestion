@@ -22,3 +22,4 @@ D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.csproj.GenerateResource.C
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\WindowsApplication.exe
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\WindowsApplication.pdb
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.MainForm.resources
+D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.ABM_Grilla.resources
