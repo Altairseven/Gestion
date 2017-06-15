@@ -8,8 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Gestion.Properties
-{
+namespace Gestion.Properties{
 
 
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

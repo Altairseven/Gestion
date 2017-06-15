@@ -20,7 +20,7 @@ namespace Gestion {
         SqlConnection co;
 
         private void ABM_Grilla_Load(object sender, EventArgs e) {
-            co = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\Gestion.mdf; Initial Catalog = erp; Integrated Security = True");
+            co = new SqlConnection(@"Data Source=FRANCO-NB\ALTAIRSQL;Initial Catalog=Gestion;Integrated Security=True");
             da = new SqlDataAdapter("SELECT * FROM Clientes", co);
             SqlCommandBuilder cmd = new SqlCommandBuilder(da);
 
