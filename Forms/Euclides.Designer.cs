@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tb = new Gestion.Maskedtextdownnuestro();
-            this.tb2 = new Gestion.Maskedtextdownnuestro();
+            this.tb = new Components.MTextBox_Edit();
+            this.tb2 = new Components.MTextBox_Edit();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.tb3 = new Gestion.Maskedtextdownnuestro();
+            this.tb3 = new Components.MTextBox_Edit();
             this.SuspendLayout();
             // 
             // tb
@@ -117,12 +117,12 @@
 
         #endregion
 
-        private Maskedtextdownnuestro tb;
-        private Maskedtextdownnuestro tb2;
+        private Components.MTextBox_Edit tb;
+        private Components.MTextBox_Edit tb2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
-        private Maskedtextdownnuestro tb3;
+        private Components.MTextBox_Edit tb3;
     }
 }

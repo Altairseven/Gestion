@@ -31,9 +31,8 @@
             this.text = new System.Windows.Forms.Label();
             this.btn_calc = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_res = new Gestion.Maskedtextdownnuestro();
-            this.txt_num = new Gestion.Maskedtextdownnuestro();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txt_res = new Gestion.Components.MTextBox_Edit();
+            this.txt_num = new Gestion.Components.MTextBox_Edit();
             this.SuspendLayout();
             // 
             // text
@@ -68,31 +67,21 @@
             // 
             this.txt_res.Location = new System.Drawing.Point(132, 94);
             this.txt_res.Name = "txt_res";
-            this.txt_res.Size = new System.Drawing.Size(116, 21);
+            this.txt_res.Size = new System.Drawing.Size(116, 20);
             this.txt_res.TabIndex = 4;
             // 
             // txt_num
             // 
             this.txt_num.Location = new System.Drawing.Point(132, 8);
             this.txt_num.Name = "txt_num";
-            this.txt_num.Size = new System.Drawing.Size(116, 21);
+            this.txt_num.Size = new System.Drawing.Size(116, 20);
             this.txt_num.TabIndex = 5;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(188, 121);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // ejemplo_for
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(275, 151);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.txt_num);
             this.Controls.Add(this.txt_res);
             this.Controls.Add(this.label1);
@@ -111,8 +100,7 @@
         private System.Windows.Forms.Label text;
         private System.Windows.Forms.Button btn_calc;
         private System.Windows.Forms.Label label1;
-        private Maskedtextdownnuestro txt_res;
-        private Maskedtextdownnuestro txt_num;
-        private System.Windows.Forms.Button button1;
+        private Components.MTextBox_Edit txt_res;
+        private Components.MTextBox_Edit txt_num;
     }
 }

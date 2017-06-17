@@ -23,3 +23,5 @@ D:\Franco\GitHub\Gestion\Gestion\bin\x64\Debug\WindowsApplication.exe
 D:\Franco\GitHub\Gestion\Gestion\bin\x64\Debug\WindowsApplication.pdb
 D:\Franco\GitHub\Gestion\Gestion\obj\x64\Debug\WindowsApplication.exe
 D:\Franco\GitHub\Gestion\Gestion\obj\x64\Debug\WindowsApplication.pdb
+D:\Franco\GitHub\Gestion\Gestion\obj\x64\Debug\Gestion.csprojResolveAssemblyReference.cache
+D:\Franco\GitHub\Gestion\Gestion\obj\x64\Debug\Gestion.Components.MTextBox_Editado.resources

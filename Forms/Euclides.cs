@@ -19,10 +19,10 @@ namespace Gestion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int num1 = Convert.ToInt32(tb.maskedTextBox1.Text);
-            int num2 = Convert.ToInt32(tb2.maskedTextBox1.Text);
+            int num1 = Convert.ToInt32(tb.Text);
+            int num2 = Convert.ToInt32(tb2.Text);
             int res = mcd(num1, num2);
-            tb3.maskedTextBox1.Text = res.ToString();
+            tb3.Text = res.ToString();
         }
         public int mcd(int num1, int num2)
         {

@@ -28,49 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tb1 = new Gestion.Maskedtextdownnuestro();
-            this.tb2 = new Gestion.Maskedtextdownnuestro();
-            this.tb3 = new Gestion.Maskedtextdownnuestro();
+            this.mTextBox_Edit1 = new Gestion.Components.MTextBox_Edit();
+            this.mTextBox_Edit2 = new Gestion.Components.MTextBox_Edit();
+            this.mTextBox_Edit3 = new Gestion.Components.MTextBox_Edit();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // tb1
+            // mTextBox_Edit1
             // 
-            this.tb1.Location = new System.Drawing.Point(21, 24);
-            this.tb1.Name = "tb1";
-            this.tb1.Size = new System.Drawing.Size(150, 20);
-            this.tb1.TabIndex = 0;
+            this.mTextBox_Edit1.Location = new System.Drawing.Point(12, 120);
+            this.mTextBox_Edit1.Name = "mTextBox_Edit1";
+            this.mTextBox_Edit1.Size = new System.Drawing.Size(167, 20);
+            this.mTextBox_Edit1.TabIndex = 0;
             // 
-            // tb2
+            // mTextBox_Edit2
             // 
-            this.tb2.Location = new System.Drawing.Point(21, 74);
-            this.tb2.Name = "tb2";
-            this.tb2.Size = new System.Drawing.Size(150, 20);
-            this.tb2.TabIndex = 1;
+            this.mTextBox_Edit2.Location = new System.Drawing.Point(13, 157);
+            this.mTextBox_Edit2.Name = "mTextBox_Edit2";
+            this.mTextBox_Edit2.Size = new System.Drawing.Size(167, 20);
+            this.mTextBox_Edit2.TabIndex = 1;
             // 
-            // tb3
+            // mTextBox_Edit3
             // 
-            this.tb3.Location = new System.Drawing.Point(21, 123);
-            this.tb3.Name = "tb3";
-            this.tb3.Size = new System.Drawing.Size(150, 20);
-            this.tb3.TabIndex = 2;
+            this.mTextBox_Edit3.Location = new System.Drawing.Point(12, 192);
+            this.mTextBox_Edit3.Name = "mTextBox_Edit3";
+            this.mTextBox_Edit3.Size = new System.Drawing.Size(167, 20);
+            this.mTextBox_Edit3.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(167, 96);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Modificacion Propia hecha al maskedtextbox, mejorando la que hicmiso en clase, es" +
+    "ta vez, es directamente una clase que hereda del maskedtextbox, y agrega la func" +
+    "ionalidad del enter y la seleccion";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // MaskedTB_Ejemplo
             // 
-            this.ClientSize = new System.Drawing.Size(192, 205);
-            this.Controls.Add(this.tb3);
-            this.Controls.Add(this.tb2);
-            this.Controls.Add(this.tb1);
+            this.ClientSize = new System.Drawing.Size(192, 223);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.mTextBox_Edit3);
+            this.Controls.Add(this.mTextBox_Edit2);
+            this.Controls.Add(this.mTextBox_Edit1);
             this.Name = "MaskedTB_Ejemplo";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
 
         #endregion
 
-        private Maskedtextdownnuestro tb1;
-        private Maskedtextdownnuestro tb2;
-        private Maskedtextdownnuestro tb3;
+        private Components.MTextBox_Edit mTextBox_Edit1;
+        private Components.MTextBox_Edit mTextBox_Edit2;
+        private Components.MTextBox_Edit mTextBox_Edit3;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -23,19 +23,19 @@ namespace Gestion
 
         private void btn_calc_Click(object sender, EventArgs e)
         {
-            int num = Convert.ToInt32(this.txt_num.maskedTextBox1.Text);
+            int num = Convert.ToInt32(this.txt_num.Text);
             int sum = 0;
 
             for (int i = 1; i <= num; i++)
             {
                 sum += i; //sum +1 = sum+=
             }
-            this.txt_res.maskedTextBox1.Text = sum.ToString();
+            this.txt_res.Text = sum.ToString();
         }
 
         private void ejemplo_for_Load(object sender, EventArgs e)
         {
-            this.txt_num.maskedTextBox1.Mask= "99";
+            this.txt_num.Mask= "99";
         }
 
 

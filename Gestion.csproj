@@ -50,24 +50,6 @@
   <PropertyGroup>
     <ApplicationIcon>Data\Icon.ico</ApplicationIcon>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>bin\x64\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <DebugType>full</DebugType>
-    <PlatformTarget>x64</PlatformTarget>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
-    <OutputPath>bin\x64\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <Optimize>true</Optimize>
-    <DebugType>pdbonly</DebugType>
-    <PlatformTarget>x64</PlatformTarget>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -136,6 +118,12 @@
     <None Include="_config.yml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\MTextBox_Edit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\MTextBox_Edit.Designer.cs">
+      <DependentUpon>MTextBox_Edit.cs</DependentUpon>
+    </Compile>
     <Compile Include="LINQ.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -215,12 +203,6 @@
     <Compile Include="Forms\MaskedTB_Ejemplo.Designer.cs">
       <DependentUpon>MaskedTB_Ejemplo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Components\Maskedtextdownnuestro.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Components\Maskedtextdownnuestro.Designer.cs">
-      <DependentUpon>Maskedtextdownnuestro.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Metodo_Burbuja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -285,9 +267,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MaskedTB_Ejemplo.resx">
       <DependentUpon>MaskedTB_Ejemplo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Components\Maskedtextdownnuestro.resx">
-      <DependentUpon>Maskedtextdownnuestro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Metodo_Burbuja.resx">
       <DependentUpon>Metodo_Burbuja.cs</DependentUpon>

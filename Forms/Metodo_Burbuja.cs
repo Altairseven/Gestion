@@ -68,5 +68,9 @@ namespace Gestion {
                 lstOrdenados.Items.Add(o);
             }
         }
+
+        private void mTextBox_Edit1_Enter(object sender, EventArgs e) {
+
+        }
     }
 }

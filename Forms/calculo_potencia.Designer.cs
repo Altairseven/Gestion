@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txt_base = new Gestion.Maskedtextdownnuestro();
-            this.txt_exp = new Gestion.Maskedtextdownnuestro();
-            this.txt_res = new Gestion.Maskedtextdownnuestro();
+            this.txt_base = new Components.MTextBox_Edit();
+            this.txt_exp = new Components.MTextBox_Edit();
+            this.txt_res = new Components.MTextBox_Edit();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_calc = new System.Windows.Forms.Button();
             this.fib_bn = new System.Windows.Forms.Button();
-            this.FibTB = new Gestion.Maskedtextdownnuestro();
+            this.FibTB = new Components.MTextBox_Edit();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -150,15 +150,15 @@
 
         #endregion
 
-        private Maskedtextdownnuestro txt_base;
-        private Maskedtextdownnuestro txt_exp;
-        private Maskedtextdownnuestro txt_res;
+        private Components.MTextBox_Edit txt_base;
+        private Components.MTextBox_Edit txt_exp;
+        private Components.MTextBox_Edit txt_res;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_calc;
         private System.Windows.Forms.Button fib_bn;
-        private Maskedtextdownnuestro FibTB;
+        private Components.MTextBox_Edit FibTB;
         private System.Windows.Forms.Label label4;
     }
 }

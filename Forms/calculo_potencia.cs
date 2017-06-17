@@ -17,14 +17,10 @@ namespace Gestion
             InitializeComponent();
         }
 
-        public bool ByMe() {
-            return true;
-        }
-
         private void calculo_potencia_Load(object sender, EventArgs e)
         {
-            this.txt_base.maskedTextBox1.Mask = "99";
-            this.txt_exp.maskedTextBox1.Mask = "99";
+            this.txt_base.Mask = "99";
+            this.txt_exp.Mask = "99";
         }
         private void calculo_potencia_Close(object sender, EventArgs e)
         {
@@ -36,14 +32,14 @@ namespace Gestion
 
         private void btn_calc_Click(object sender, EventArgs e)
         {
-            double bas = Convert.ToDouble(this.txt_base.maskedTextBox1.Text);
-            int exp = Convert.ToInt32(this.txt_exp.maskedTextBox1.Text);
+            double bas = Convert.ToDouble(this.txt_base.Text);
+            int exp = Convert.ToInt32(this.txt_exp.Text);
             double pot = bas;
             for (int i = 1; i < exp; i++)
             {
                 pot = pot * bas;
             }
-            this.txt_res.maskedTextBox1.Text = pot.ToString();
+            this.txt_res.Text = pot.ToString();
             
         }
 
@@ -52,11 +48,11 @@ namespace Gestion
             int outParse;
 
             // Check if the point entered is numeric or not
-            if (!Int32.TryParse(FibTB.maskedTextBox1.Text, out outParse)) {
+            if (!Int32.TryParse(FibTB.Text, out outParse)) {
                 MessageBox.Show("Solo Se permiten Numeros Enteros.");
             }
             else {
-                int x = Int32.Parse(FibTB.maskedTextBox1.Text);
+                int x = Int32.Parse(FibTB.Text);
                 if (x < 0) {
                     MessageBox.Show("Ingrese un numero de valor positivo");
                 }

@@ -59,6 +59,7 @@
             this.label1.Size = new System.Drawing.Size(63, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Conectar A:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Main
             // 
