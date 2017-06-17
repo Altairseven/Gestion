@@ -11,16 +11,25 @@ using System.Data.SqlClient;
 
 
 namespace Gestion {
-    public partial class Prueba_ado2 : Form {
+    public partial class Prueba_ado2 : Gestion.Forms.StandardForm {
         public Prueba_ado2() {
             InitializeComponent();
         }
 
-        public SqlConnection co = new SqlConnection(Main.ConString);
+        public static bool ByMe {
+            get {
+                return true;
+            }
+            set {
+            }
+        }
+
+        public SqlConnection co = new SqlConnection(MainForm.ConString);
 
         public DataTable ds = new DataTable();
 
         private void Prueba_ado2_Load(object sender, EventArgs e) {
+            MessageBox.Show(MainForm.ConString);
             SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Clientes", co);
             SqlCommandBuilder cmd = new SqlCommandBuilder(da);
 

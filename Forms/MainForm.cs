@@ -9,69 +9,50 @@ using System.Windows.Forms;
 using System.Reflection;
 
 namespace Gestion {
-    public partial class MainForm : Form {
+    public partial class MainForm : Gestion.Forms.StandardForm {
         public MainForm() {
             InitializeComponent();
         }
 
         public static string ConString;
+        connectionstring con = new connectionstring();
 
         private void MainForm_Load(object sender, EventArgs e) {
             toolStripComboBox1.Items.Add("LocalDB");
             toolStripComboBox1.Items.Add("LocalSQLServer");
             toolStripComboBox1.SelectedIndex = 1;
+            this.MinimumSize = new Size(FLPMain.Size.Width + 20, FLPMain.Size.Height + menuStrip1.Size.Height + 50);
+            constringinit();
+            setup_forms();
+        }
 
-            Get_Forms forms = new Get_Forms();
+        private void setup_forms() {
+            Get_Forms1 forms = new Get_Forms1();
             foreach (Type form in forms.Formlist) {
-                if (form.Name != "MainForm") {
+                if (form.Name != "MainForm" && form.Name != "StandardForm") {
                     FormButton newbutton = new FormButton(form.Name, form);
-                    var asd = form.GetType().GetProperty("ByMe");
-                    PropertyInfo test = form.GetProperty("ByMe", BindingFlags.Public | BindingFlags.Instance);
-                    
-                    
-                    if (test == null) {
-                        newbutton.Width = GBT3.Width - 7;
-                        GBT3.Controls.Add(newbutton);
-                    }
-                    else {
+                    newbutton.Width = FLP1.Width - 7;
+                    if (form.GetProperty("ByMe") == null)
+                        FLP3.Controls.Add(newbutton);
+                    else if ((bool)form.GetProperty("ByMe").GetValue(form, null) == true)
+                        FLP2.Controls.Add(newbutton);
+                    else
+                        FLP1.Controls.Add(newbutton);
 
-
-                        MessageBox.Show(test.ToString() + form.Name);
-                        var la = test.GetValue(form, null);
-
-              
-                            MessageBox.Show(la.ToString());
-                        //bool lalala = (bool)test.GetValue(form, null);
-                        //MessageBox.Show(lalala.ToString());
-
-                    }
-
-
-
-
-
-                    
                 }
             }
         }
-
-        private void toolStripComboBox1_Click(object sender, EventArgs e) {
-            if (toolStripComboBox1.SelectedIndex == 0) {
-                connectionstring con = new connectionstring(false);
-                ConString = con.ConSrt;
-            }
-            else {
-                connectionstring con = new connectionstring(true);
-                ConString = con.ConSrt;
-            }
+        private void toolStripComboBox1_IndexChanged(object sender, EventArgs e) {
+            constringinit();
         }
 
-        private void GBT1_Paint(object sender, PaintEventArgs e) {
-
-        }
-
-        private void GBT2_Paint(object sender, PaintEventArgs e) {
-
+        private void constringinit() {
+            if (toolStripComboBox1.Text == "LocalSQLServer") {
+                ConString = con.ConSrt(true);
+            }
+            else if (toolStripComboBox1.Text == "LocalDB") {
+                ConString = con.ConSrt(false);
+            }
         }
     }
 }

@@ -8,11 +8,18 @@ using System.Text;
 using System.Windows.Forms;
 
 namespace Gestion {
-    public partial class Metodo_Burbuja : Form {
+    public partial class Metodo_Burbuja : Gestion.Forms.StandardForm {
         public Metodo_Burbuja() {
             InitializeComponent();
         }
 
+        public static bool ByMe {
+            get {
+                return false;
+            }
+            set {
+            }
+        }
 
         // Metodo de Burbuja (Sirve para Ordenar los valores en un array).
         //En el formulario hay 2 Listbox LLamados lstDesordenados u lstOrdenados

@@ -9,7 +9,6 @@ D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.ejemplo_for.resources
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.ejemplo_separar_par_impar.resources
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Euclides.resources
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.FormButton.resources
-D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Main.resources
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.MaskedTB_Ejemplo.resources
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Metodo_Burbuja.resources
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Properties.Resources.resources
@@ -23,3 +22,4 @@ D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.ABM_Grilla.resources
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.linq_test.resources
 D:\Franco\GitHub\Gestion\bin\Debug\Data\Gestion.mdf
 D:\Franco\GitHub\Gestion\bin\Debug\Data\Gestion_log.ldf
+D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Forms.StandardForm.resources

@@ -10,12 +10,20 @@ using System.Windows.Forms;
 
 namespace Gestion
 {
-    public partial class MaskedTB_Ejemplo : Form
-    {
+    public partial class MaskedTB_Ejemplo :Form {
         public MaskedTB_Ejemplo()
         {
             InitializeComponent();
         }
+
+        public static bool ByMe {
+            get {
+                return false;
+            }
+            set {
+            }
+        }
+
 
         private void MaskedTB_Ejemplo_Load(object sender, EventArgs e)
         {

@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Gestion
 {
-    public partial class calculo_potencia : Form
-    {
+    public partial class calculo_potencia : Gestion.Forms.StandardForm {
         public calculo_potencia()
         {
             InitializeComponent();
+        }
+
+        public static bool ByMe {
+            get {
+                return false;
+            }
+            set {
+            }
         }
 
         private void calculo_potencia_Load(object sender, EventArgs e)
@@ -22,12 +29,7 @@ namespace Gestion
             this.txt_base.Mask = "99";
             this.txt_exp.Mask = "99";
         }
-        private void calculo_potencia_Close(object sender, EventArgs e)
-        {
-            this.Hide();
-            Main a = new Main();
-            this.Close();
-        }
+
 
 
         private void btn_calc_Click(object sender, EventArgs e)

@@ -124,6 +124,12 @@
     <Compile Include="Components\MTextBox_Edit.Designer.cs">
       <DependentUpon>MTextBox_Edit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\StandardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StandardForm.Designer.cs">
+      <DependentUpon>StandardForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LINQ.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -184,12 +190,6 @@
     </Compile>
     <Compile Include="Forms\linq_test.Designer.cs">
       <DependentUpon>linq_test.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Main.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
@@ -259,9 +259,6 @@
     <EmbeddedResource Include="Forms\linq_test.resx">
       <DependentUpon>linq_test.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -270,6 +267,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Metodo_Burbuja.resx">
       <DependentUpon>Metodo_Burbuja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StandardForm.resx">
+      <DependentUpon>StandardForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx" />
     <EmbeddedResource Include="Forms\Prueba_ado.resx">

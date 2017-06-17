@@ -13,11 +13,19 @@ using System.Windows.Forms;
 
 namespace Gestion
 {
-    public partial class ejemplo_for : Form // :form heredado de form que es nativa de visual studio
+    public partial class ejemplo_for : Gestion.Forms.StandardForm 
     {
         public ejemplo_for()
         {
             InitializeComponent();
+        }
+
+        public static bool ByMe {
+            get {
+                return false;
+            }
+            set {
+            }
         }
 
 

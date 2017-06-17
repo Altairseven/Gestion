@@ -8,19 +8,30 @@ using System.Text;
 using System.Windows.Forms;
 
 namespace Gestion {
-    public partial class linq_test : Form {
+    public partial class linq_test : Gestion.Forms.StandardForm {
         public linq_test() {
             InitializeComponent();
         }
 
+
+        public static bool ByMe {
+            get {
+                return true;
+            }
+            set {
+            }
+        }
+
+
         LINQDataContext db;
 
         private void linq_test_Load(object sender, EventArgs e) {
+            MessageBox.Show(MainForm.ConString);
             reload();
         }
 
         private void reload() {
-            db = new LINQDataContext(Main.ConString);
+            db = new LINQDataContext(MainForm.ConString);
             dataGridView1.DataSource = db.clientes;
         }
 

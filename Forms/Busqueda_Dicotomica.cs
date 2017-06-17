@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Gestion {
-    public partial class Busqueda_Dicotomica : Form {
+    public partial class Busqueda_Dicotomica : Gestion.Forms.StandardForm {
         public Busqueda_Dicotomica() {
             InitializeComponent();
         }
@@ -19,7 +19,7 @@ namespace Gestion {
 
         public static bool ByMe {
             get {
-                return true;
+                return false;
             }
             set {
             }

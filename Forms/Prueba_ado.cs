@@ -11,14 +11,21 @@ using System.Data.SqlClient;
 
 namespace Gestion
 {
-    public partial class Prueba_ado : Form
-    {
+    public partial class Prueba_ado : Gestion.Forms.StandardForm {
         public Prueba_ado(){
             InitializeComponent();
         }
 
-   
-        public SqlConnection co = new SqlConnection(Main.ConString);
+        public static bool ByMe {
+            get {
+                return false;
+            }
+            set {
+            }
+        }
+
+
+        public SqlConnection co = new SqlConnection(MainForm.ConString);
         public DataSet ds= new DataSet();
 
         private void Prueba_ado_Load(object sender, EventArgs e) {

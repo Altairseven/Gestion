@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Gestion
 {
-    public partial class ejemplo_separar_par_impar : Form
-    {
+    public partial class ejemplo_separar_par_impar : Gestion.Forms.StandardForm {
         public ejemplo_separar_par_impar()
         {
             InitializeComponent();
+        }
+
+        public static bool ByMe {
+            get {
+                return false;
+            }
+            set {
+            }
         }
 
         private void ejemplo_separar_par_impar_Load(object sender, EventArgs e)
