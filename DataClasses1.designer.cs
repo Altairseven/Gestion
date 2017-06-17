@@ -33,7 +33,25 @@ namespace Gestion
     partial void Insertcliente(cliente instance);
     partial void Updatecliente(cliente instance);
     partial void Deletecliente(cliente instance);
+    partial void Insertempleado(empleado instance);
+    partial void Updateempleado(empleado instance);
+    partial void Deleteempleado(empleado instance);
+    partial void Insertoficina(oficina instance);
+    partial void Updateoficina(oficina instance);
+    partial void Deleteoficina(oficina instance);
+    partial void Insertpedido(pedido instance);
+    partial void Updatepedido(pedido instance);
+    partial void Deletepedido(pedido instance);
+    partial void Insertproducto(producto instance);
+    partial void Updateproducto(producto instance);
+    partial void Deleteproducto(producto instance);
     #endregion
+		
+		public DataClasses1DataContext() : 
+				base(global::Gestion.Properties.Settings.Default.GestionConnectionString1, mappingSource)
+		{
+			OnCreated();
+		}
 		
 		public DataClasses1DataContext(string connection) : 
 				base(connection, mappingSource)
@@ -64,6 +82,38 @@ namespace Gestion
 			get
 			{
 				return this.GetTable<cliente>();
+			}
+		}
+		
+		public System.Data.Linq.Table<empleado> empleados
+		{
+			get
+			{
+				return this.GetTable<empleado>();
+			}
+		}
+		
+		public System.Data.Linq.Table<oficina> oficinas
+		{
+			get
+			{
+				return this.GetTable<oficina>();
+			}
+		}
+		
+		public System.Data.Linq.Table<pedido> pedidos
+		{
+			get
+			{
+				return this.GetTable<pedido>();
+			}
+		}
+		
+		public System.Data.Linq.Table<producto> productos
+		{
+			get
+			{
+				return this.GetTable<producto>();
 			}
 		}
 	}
@@ -153,6 +203,830 @@ namespace Gestion
 					this._limitecredito = value;
 					this.SendPropertyChanged("limitecredito");
 					this.OnlimitecreditoChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.empleados")]
+	public partial class empleado : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _numemp;
+		
+		private string _nombre;
+		
+		private System.Nullable<int> _edad;
+		
+		private int _oficina;
+		
+		private string _titulo;
+		
+		private System.Nullable<System.DateTime> _contrato;
+		
+		private System.Nullable<int> _jefe;
+		
+		private System.Nullable<decimal> _cuota;
+		
+		private System.Nullable<decimal> _ventas;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnnumempChanging(int value);
+    partial void OnnumempChanged();
+    partial void OnnombreChanging(string value);
+    partial void OnnombreChanged();
+    partial void OnedadChanging(System.Nullable<int> value);
+    partial void OnedadChanged();
+    partial void OnoficinaChanging(int value);
+    partial void OnoficinaChanged();
+    partial void OntituloChanging(string value);
+    partial void OntituloChanged();
+    partial void OncontratoChanging(System.Nullable<System.DateTime> value);
+    partial void OncontratoChanged();
+    partial void OnjefeChanging(System.Nullable<int> value);
+    partial void OnjefeChanged();
+    partial void OncuotaChanging(System.Nullable<decimal> value);
+    partial void OncuotaChanged();
+    partial void OnventasChanging(System.Nullable<decimal> value);
+    partial void OnventasChanged();
+    #endregion
+		
+		public empleado()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_numemp", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int numemp
+		{
+			get
+			{
+				return this._numemp;
+			}
+			set
+			{
+				if ((this._numemp != value))
+				{
+					this.OnnumempChanging(value);
+					this.SendPropertyChanging();
+					this._numemp = value;
+					this.SendPropertyChanged("numemp");
+					this.OnnumempChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="NVarChar(255)")]
+		public string nombre
+		{
+			get
+			{
+				return this._nombre;
+			}
+			set
+			{
+				if ((this._nombre != value))
+				{
+					this.OnnombreChanging(value);
+					this.SendPropertyChanging();
+					this._nombre = value;
+					this.SendPropertyChanged("nombre");
+					this.OnnombreChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_edad", DbType="Int")]
+		public System.Nullable<int> edad
+		{
+			get
+			{
+				return this._edad;
+			}
+			set
+			{
+				if ((this._edad != value))
+				{
+					this.OnedadChanging(value);
+					this.SendPropertyChanging();
+					this._edad = value;
+					this.SendPropertyChanged("edad");
+					this.OnedadChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_oficina", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int oficina
+		{
+			get
+			{
+				return this._oficina;
+			}
+			set
+			{
+				if ((this._oficina != value))
+				{
+					this.OnoficinaChanging(value);
+					this.SendPropertyChanging();
+					this._oficina = value;
+					this.SendPropertyChanged("oficina");
+					this.OnoficinaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_titulo", DbType="NVarChar(255)")]
+		public string titulo
+		{
+			get
+			{
+				return this._titulo;
+			}
+			set
+			{
+				if ((this._titulo != value))
+				{
+					this.OntituloChanging(value);
+					this.SendPropertyChanging();
+					this._titulo = value;
+					this.SendPropertyChanged("titulo");
+					this.OntituloChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_contrato", DbType="DateTime2")]
+		public System.Nullable<System.DateTime> contrato
+		{
+			get
+			{
+				return this._contrato;
+			}
+			set
+			{
+				if ((this._contrato != value))
+				{
+					this.OncontratoChanging(value);
+					this.SendPropertyChanging();
+					this._contrato = value;
+					this.SendPropertyChanged("contrato");
+					this.OncontratoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_jefe", DbType="Int")]
+		public System.Nullable<int> jefe
+		{
+			get
+			{
+				return this._jefe;
+			}
+			set
+			{
+				if ((this._jefe != value))
+				{
+					this.OnjefeChanging(value);
+					this.SendPropertyChanging();
+					this._jefe = value;
+					this.SendPropertyChanged("jefe");
+					this.OnjefeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cuota", DbType="Money")]
+		public System.Nullable<decimal> cuota
+		{
+			get
+			{
+				return this._cuota;
+			}
+			set
+			{
+				if ((this._cuota != value))
+				{
+					this.OncuotaChanging(value);
+					this.SendPropertyChanging();
+					this._cuota = value;
+					this.SendPropertyChanged("cuota");
+					this.OncuotaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ventas", DbType="Money")]
+		public System.Nullable<decimal> ventas
+		{
+			get
+			{
+				return this._ventas;
+			}
+			set
+			{
+				if ((this._ventas != value))
+				{
+					this.OnventasChanging(value);
+					this.SendPropertyChanging();
+					this._ventas = value;
+					this.SendPropertyChanged("ventas");
+					this.OnventasChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.oficinas")]
+	public partial class oficina : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _oficina1;
+		
+		private string _ciudad;
+		
+		private string _region;
+		
+		private System.Nullable<int> _dir;
+		
+		private System.Nullable<decimal> _objetivo;
+		
+		private System.Nullable<decimal> _ventas;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Onoficina1Changing(int value);
+    partial void Onoficina1Changed();
+    partial void OnciudadChanging(string value);
+    partial void OnciudadChanged();
+    partial void OnregionChanging(string value);
+    partial void OnregionChanged();
+    partial void OndirChanging(System.Nullable<int> value);
+    partial void OndirChanged();
+    partial void OnobjetivoChanging(System.Nullable<decimal> value);
+    partial void OnobjetivoChanged();
+    partial void OnventasChanging(System.Nullable<decimal> value);
+    partial void OnventasChanged();
+    #endregion
+		
+		public oficina()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="oficina", Storage="_oficina1", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int oficina1
+		{
+			get
+			{
+				return this._oficina1;
+			}
+			set
+			{
+				if ((this._oficina1 != value))
+				{
+					this.Onoficina1Changing(value);
+					this.SendPropertyChanging();
+					this._oficina1 = value;
+					this.SendPropertyChanged("oficina1");
+					this.Onoficina1Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ciudad", DbType="NVarChar(255)")]
+		public string ciudad
+		{
+			get
+			{
+				return this._ciudad;
+			}
+			set
+			{
+				if ((this._ciudad != value))
+				{
+					this.OnciudadChanging(value);
+					this.SendPropertyChanging();
+					this._ciudad = value;
+					this.SendPropertyChanged("ciudad");
+					this.OnciudadChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_region", DbType="NVarChar(255)")]
+		public string region
+		{
+			get
+			{
+				return this._region;
+			}
+			set
+			{
+				if ((this._region != value))
+				{
+					this.OnregionChanging(value);
+					this.SendPropertyChanging();
+					this._region = value;
+					this.SendPropertyChanged("region");
+					this.OnregionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_dir", DbType="Int")]
+		public System.Nullable<int> dir
+		{
+			get
+			{
+				return this._dir;
+			}
+			set
+			{
+				if ((this._dir != value))
+				{
+					this.OndirChanging(value);
+					this.SendPropertyChanging();
+					this._dir = value;
+					this.SendPropertyChanged("dir");
+					this.OndirChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_objetivo", DbType="Money")]
+		public System.Nullable<decimal> objetivo
+		{
+			get
+			{
+				return this._objetivo;
+			}
+			set
+			{
+				if ((this._objetivo != value))
+				{
+					this.OnobjetivoChanging(value);
+					this.SendPropertyChanging();
+					this._objetivo = value;
+					this.SendPropertyChanged("objetivo");
+					this.OnobjetivoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ventas", DbType="Money")]
+		public System.Nullable<decimal> ventas
+		{
+			get
+			{
+				return this._ventas;
+			}
+			set
+			{
+				if ((this._ventas != value))
+				{
+					this.OnventasChanging(value);
+					this.SendPropertyChanging();
+					this._ventas = value;
+					this.SendPropertyChanged("ventas");
+					this.OnventasChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.pedidos")]
+	public partial class pedido : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private string _numpedido;
+		
+		private System.Nullable<System.DateTime> _fechapedido;
+		
+		private int _clie;
+		
+		private string _fab;
+		
+		private string _producto;
+		
+		private System.Nullable<int> _cant;
+		
+		private System.Nullable<decimal> _importe;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnnumpedidoChanging(string value);
+    partial void OnnumpedidoChanged();
+    partial void OnfechapedidoChanging(System.Nullable<System.DateTime> value);
+    partial void OnfechapedidoChanged();
+    partial void OnclieChanging(int value);
+    partial void OnclieChanged();
+    partial void OnfabChanging(string value);
+    partial void OnfabChanged();
+    partial void OnproductoChanging(string value);
+    partial void OnproductoChanged();
+    partial void OncantChanging(System.Nullable<int> value);
+    partial void OncantChanged();
+    partial void OnimporteChanging(System.Nullable<decimal> value);
+    partial void OnimporteChanged();
+    #endregion
+		
+		public pedido()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_numpedido", DbType="NVarChar(255)")]
+		public string numpedido
+		{
+			get
+			{
+				return this._numpedido;
+			}
+			set
+			{
+				if ((this._numpedido != value))
+				{
+					this.OnnumpedidoChanging(value);
+					this.SendPropertyChanging();
+					this._numpedido = value;
+					this.SendPropertyChanged("numpedido");
+					this.OnnumpedidoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechapedido", DbType="DateTime2")]
+		public System.Nullable<System.DateTime> fechapedido
+		{
+			get
+			{
+				return this._fechapedido;
+			}
+			set
+			{
+				if ((this._fechapedido != value))
+				{
+					this.OnfechapedidoChanging(value);
+					this.SendPropertyChanging();
+					this._fechapedido = value;
+					this.SendPropertyChanged("fechapedido");
+					this.OnfechapedidoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_clie", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int clie
+		{
+			get
+			{
+				return this._clie;
+			}
+			set
+			{
+				if ((this._clie != value))
+				{
+					this.OnclieChanging(value);
+					this.SendPropertyChanging();
+					this._clie = value;
+					this.SendPropertyChanged("clie");
+					this.OnclieChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fab", DbType="NVarChar(255)")]
+		public string fab
+		{
+			get
+			{
+				return this._fab;
+			}
+			set
+			{
+				if ((this._fab != value))
+				{
+					this.OnfabChanging(value);
+					this.SendPropertyChanging();
+					this._fab = value;
+					this.SendPropertyChanged("fab");
+					this.OnfabChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_producto", DbType="NVarChar(255) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string producto
+		{
+			get
+			{
+				return this._producto;
+			}
+			set
+			{
+				if ((this._producto != value))
+				{
+					this.OnproductoChanging(value);
+					this.SendPropertyChanging();
+					this._producto = value;
+					this.SendPropertyChanged("producto");
+					this.OnproductoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cant", DbType="Int")]
+		public System.Nullable<int> cant
+		{
+			get
+			{
+				return this._cant;
+			}
+			set
+			{
+				if ((this._cant != value))
+				{
+					this.OncantChanging(value);
+					this.SendPropertyChanging();
+					this._cant = value;
+					this.SendPropertyChanged("cant");
+					this.OncantChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_importe", DbType="Money")]
+		public System.Nullable<decimal> importe
+		{
+			get
+			{
+				return this._importe;
+			}
+			set
+			{
+				if ((this._importe != value))
+				{
+					this.OnimporteChanging(value);
+					this.SendPropertyChanging();
+					this._importe = value;
+					this.SendPropertyChanged("importe");
+					this.OnimporteChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.productos")]
+	public partial class producto : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _idfab;
+		
+		private string _idproducto;
+		
+		private string _descripcion;
+		
+		private System.Nullable<decimal> _precio;
+		
+		private System.Nullable<int> _existencias;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidfabChanging(string value);
+    partial void OnidfabChanged();
+    partial void OnidproductoChanging(string value);
+    partial void OnidproductoChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    partial void OnprecioChanging(System.Nullable<decimal> value);
+    partial void OnprecioChanged();
+    partial void OnexistenciasChanging(System.Nullable<int> value);
+    partial void OnexistenciasChanged();
+    #endregion
+		
+		public producto()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idfab", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string idfab
+		{
+			get
+			{
+				return this._idfab;
+			}
+			set
+			{
+				if ((this._idfab != value))
+				{
+					this.OnidfabChanging(value);
+					this.SendPropertyChanging();
+					this._idfab = value;
+					this.SendPropertyChanged("idfab");
+					this.OnidfabChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idproducto", DbType="NVarChar(255) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string idproducto
+		{
+			get
+			{
+				return this._idproducto;
+			}
+			set
+			{
+				if ((this._idproducto != value))
+				{
+					this.OnidproductoChanging(value);
+					this.SendPropertyChanging();
+					this._idproducto = value;
+					this.SendPropertyChanged("idproducto");
+					this.OnidproductoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(255)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_precio", DbType="Money")]
+		public System.Nullable<decimal> precio
+		{
+			get
+			{
+				return this._precio;
+			}
+			set
+			{
+				if ((this._precio != value))
+				{
+					this.OnprecioChanging(value);
+					this.SendPropertyChanging();
+					this._precio = value;
+					this.SendPropertyChanged("precio");
+					this.OnprecioChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_existencias", DbType="Int")]
+		public System.Nullable<int> existencias
+		{
+			get
+			{
+				return this._existencias;
+			}
+			set
+			{
+				if ((this._existencias != value))
+				{
+					this.OnexistenciasChanging(value);
+					this.SendPropertyChanging();
+					this._existencias = value;
+					this.SendPropertyChanged("existencias");
+					this.OnexistenciasChanged();
 				}
 			}
 		}

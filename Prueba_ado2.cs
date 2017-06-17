@@ -16,7 +16,8 @@ namespace Gestion {
             InitializeComponent();
         }
 
-        public SqlConnection co = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\Gestion.mdf;Integrated Security = True");
+        public SqlConnection co = new SqlConnection(Main.ConString);
+
         public DataTable ds = new DataTable();
 
         private void Prueba_ado2_Load(object sender, EventArgs e) {
@@ -26,12 +27,12 @@ namespace Gestion {
             da.Fill(ds);
 
             var b = ds.DefaultView;
-            string aux;
-            for (int i = 0; i < ds.Rows.Count; i++) // loop en el registro.
-            {
-                aux = b[i]["Rsocial"].ToString();
+            //string aux;
+            //for (int i = 0; i < ds.Rows.Count; i++) // loop en el registro.
+            //{
+            //    aux = b[i]["Nombre"].ToString();
 
-            }
+            //}
             dataGridView1.DataSource = b;
         }
     }

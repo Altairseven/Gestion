@@ -34,6 +34,7 @@
             this.insBT = new System.Windows.Forms.Button();
             this.updBT = new System.Windows.Forms.Button();
             this.delBT = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -133,11 +134,22 @@
             this.delBT.UseVisualStyleBackColor = true;
             this.delBT.Click += new System.EventHandler(this.delBT_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(389, 292);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(80, 23);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "Test Select";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // linq_test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 327);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.delBT);
             this.Controls.Add(this.updBT);
             this.Controls.Add(this.insBT);
@@ -171,5 +183,6 @@
         private System.Windows.Forms.Button insBT;
         private System.Windows.Forms.Button updBT;
         private System.Windows.Forms.Button delBT;
+        private System.Windows.Forms.Button button2;
     }
 }

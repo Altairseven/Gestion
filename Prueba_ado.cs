@@ -18,7 +18,7 @@ namespace Gestion
         }
 
    
-        public SqlConnection co = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=D:\Franco\Google Drive\Documentos GDrive\Facultad\Programacion II\Gestion\Gestion\Gestion.mdf;Integrated Security = True");
+        public SqlConnection co = new SqlConnection(Main.ConString);
         public DataSet ds= new DataSet();
 
         private void Prueba_ado_Load(object sender, EventArgs e) {
@@ -34,7 +34,7 @@ namespace Gestion
                 aux = b[i]["Rsocial"].ToString();
                 
             }
-            //dataGridView1.DataSource = b;
+            dataGridView1.DataSource = b;
             //bindingSource1.DataSource = ds.Tables[0];
             
             //bindingNavigator1.BindingSource = this.bindingSource1;
