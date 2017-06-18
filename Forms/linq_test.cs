@@ -16,7 +16,6 @@ namespace Gestion {
         LINQDataContext db;
 
         private void linq_test_Load(object sender, EventArgs e) {
-            MessageBox.Show(MainForm.ConString);
             reload();
         }
 
@@ -65,10 +64,6 @@ namespace Gestion {
             else {
                 MessageBox.Show("pone numeros en el id y limite de credito");
             }
-            
-            
-
-
         }
 
         private void updBT_Click(object sender, EventArgs e) {

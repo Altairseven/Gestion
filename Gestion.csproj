@@ -118,6 +118,7 @@
     <None Include="_config.yml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Ejemplo_Classes.cs" />
     <Compile Include="Classes\salt_hash.cs" />
     <Compile Include="Components\MTextBox_Edit.cs">
       <SubType>Component</SubType>
