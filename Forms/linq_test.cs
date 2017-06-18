@@ -8,20 +8,10 @@ using System.Text;
 using System.Windows.Forms;
 
 namespace Gestion {
-    public partial class linq_test : Gestion.Forms.StandardForm {
+    public partial class linq_test : Gestion.Forms.OwnForm {
         public linq_test() {
             InitializeComponent();
         }
-
-
-        public static bool ByMe {
-            get {
-                return true;
-            }
-            set {
-            }
-        }
-
 
         LINQDataContext db;
 

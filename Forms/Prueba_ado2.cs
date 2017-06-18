@@ -11,18 +11,11 @@ using System.Data.SqlClient;
 
 
 namespace Gestion {
-    public partial class Prueba_ado2 : Gestion.Forms.StandardForm {
+    public partial class Prueba_ado2 : Gestion.Forms.OwnForm {
         public Prueba_ado2() {
             InitializeComponent();
         }
 
-        public static bool ByMe {
-            get {
-                return true;
-            }
-            set {
-            }
-        }
 
         public SqlConnection co = new SqlConnection(MainForm.ConString);
 

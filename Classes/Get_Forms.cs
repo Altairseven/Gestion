@@ -19,6 +19,17 @@ namespace Gestion {
                     Formlist.Add(myType);
             }
         }
+        public Get_Forms(string target) {
+            System.Reflection.Assembly myAssembly = System.Reflection.Assembly.GetEntryAssembly();
+            Type[] Types = myAssembly.GetTypes();
+            Formlist.Clear();
+            foreach (Type myType in Types) {
+                if (myType.BaseType == null)
+                    continue;
+                if (myType.BaseType.FullName == target)
+                    Formlist.Add(myType);
+            }
+        }
     }
     class Get_Forms1 {
 

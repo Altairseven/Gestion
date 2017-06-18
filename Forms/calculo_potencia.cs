@@ -10,18 +10,10 @@ using System.Windows.Forms;
 
 namespace Gestion
 {
-    public partial class calculo_potencia : Gestion.Forms.StandardForm {
+    public partial class calculo_potencia : Gestion.Forms.EnClasesForm {
         public calculo_potencia()
         {
             InitializeComponent();
-        }
-
-        public static bool ByMe {
-            get {
-                return false;
-            }
-            set {
-            }
         }
 
         private void calculo_potencia_Load(object sender, EventArgs e)

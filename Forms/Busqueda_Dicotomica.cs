@@ -9,21 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Gestion {
-    public partial class Busqueda_Dicotomica : Gestion.Forms.StandardForm {
+    public partial class Busqueda_Dicotomica : Gestion.Forms.EnClasesForm {
         public Busqueda_Dicotomica() {
             InitializeComponent();
         }
 
         //El codigo escrito en el metodo Load y el btnBurbuja_Click, son lo mismo que los encontrados en
         // el formulario metodo burbuja, pero en el mismo, esta mejor comentado.
-
-        public static bool ByMe {
-            get {
-                return false;
-            }
-            set {
-            }
-        }
 
         private void Busqueda_Dicotomica_Load(object sender, EventArgs e) {
             Random r = new Random();

@@ -10,19 +10,10 @@ using System.Windows.Forms;
 
 namespace Gestion
 {
-    public partial class Euclides : Gestion.Forms.StandardForm {
+    public partial class Euclides : Gestion.Forms.EnClasesForm {
         public Euclides()
         {
             InitializeComponent();
-        }
-
-
-        public static bool ByMe {
-            get {
-                return false;
-            }
-            set {
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)

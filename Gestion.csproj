@@ -118,17 +118,30 @@
     <None Include="_config.yml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\salt_hash.cs" />
     <Compile Include="Components\MTextBox_Edit.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Components\MTextBox_Edit.Designer.cs">
       <DependentUpon>MTextBox_Edit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\StandardForm.cs">
+    <Compile Include="Forms\Templates\EnClasesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\StandardForm.Designer.cs">
-      <DependentUpon>StandardForm.cs</DependentUpon>
+    <Compile Include="Forms\Templates\EnClasesForm.Designer.cs">
+      <DependentUpon>EnClasesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Password_Salt_And_Hash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Password_Salt_And_Hash.Designer.cs">
+      <DependentUpon>Password_Salt_And_Hash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Templates\OwnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Templates\OwnForm.Designer.cs">
+      <DependentUpon>OwnForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LINQ.designer.cs">
       <AutoGen>True</AutoGen>
@@ -268,8 +281,14 @@
     <EmbeddedResource Include="Forms\Metodo_Burbuja.resx">
       <DependentUpon>Metodo_Burbuja.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\StandardForm.resx">
-      <DependentUpon>StandardForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Templates\EnClasesForm.resx">
+      <DependentUpon>EnClasesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Password_Salt_And_Hash.resx">
+      <DependentUpon>Password_Salt_And_Hash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Templates\OwnForm.resx">
+      <DependentUpon>OwnForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx" />
     <EmbeddedResource Include="Forms\Prueba_ado.resx">

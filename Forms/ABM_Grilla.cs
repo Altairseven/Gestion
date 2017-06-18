@@ -9,19 +9,10 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 
 namespace Gestion {
-    public partial class ABM_Grilla : Gestion.Forms.StandardForm {
+    public partial class ABM_Grilla : Gestion.Forms.EnClasesForm {
         public ABM_Grilla() {
             InitializeComponent();
         }
-
-        public static bool ByMe {
-            get {
-                return false;
-            }
-            set {
-            }
-        }
-
 
         SqlDataAdapter da;
         DataSet ds = new DataSet();

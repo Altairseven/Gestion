@@ -22,4 +22,6 @@ D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.ABM_Grilla.resources
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.linq_test.resources
 D:\Franco\GitHub\Gestion\bin\Debug\Data\Gestion.mdf
 D:\Franco\GitHub\Gestion\bin\Debug\Data\Gestion_log.ldf
-D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Forms.StandardForm.resources
+D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Forms.Password_Salt_And_Hash.resources
+D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Forms.EnClasesForm.resources
+D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Forms.OwnForm.resources

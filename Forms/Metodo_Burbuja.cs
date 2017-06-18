@@ -8,17 +8,9 @@ using System.Text;
 using System.Windows.Forms;
 
 namespace Gestion {
-    public partial class Metodo_Burbuja : Gestion.Forms.StandardForm {
+    public partial class Metodo_Burbuja : Gestion.Forms.EnClasesForm {
         public Metodo_Burbuja() {
             InitializeComponent();
-        }
-
-        public static bool ByMe {
-            get {
-                return false;
-            }
-            set {
-            }
         }
 
         // Metodo de Burbuja (Sirve para Ordenar los valores en un array).

@@ -8,21 +8,10 @@ using System.Text;
 using System.Windows.Forms;
 
 namespace Gestion {
-    public partial class Busqueda_Dicotomica_PorMi : Gestion.Forms.StandardForm {
+    public partial class Busqueda_Dicotomica_PorMi : Gestion.Forms.OwnForm {
         public Busqueda_Dicotomica_PorMi() {
             InitializeComponent();
         }
-
-        public static bool ByMe {
-            get {
-                return true;
-            }
-            set {
-            }
-        }
-
-
-
 
         private void Busqueda_Dicotomica_PorMi_Load(object sender, EventArgs e) {
 

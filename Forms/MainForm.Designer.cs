@@ -145,7 +145,7 @@
             this.Controls.Add(this.FLPMain);
             this.Controls.Add(this.menuStrip1);
             this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.Text = "Proyecto Gestion";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.GB1.ResumeLayout(false);
             this.GB2.ResumeLayout(false);

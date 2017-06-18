@@ -13,21 +13,11 @@ using System.Windows.Forms;
 
 namespace Gestion
 {
-    public partial class ejemplo_for : Gestion.Forms.StandardForm 
-    {
+    public partial class ejemplo_for : Gestion.Forms.EnClasesForm {
         public ejemplo_for()
         {
             InitializeComponent();
         }
-
-        public static bool ByMe {
-            get {
-                return false;
-            }
-            set {
-            }
-        }
-
 
         private void btn_calc_Click(object sender, EventArgs e)
         {
