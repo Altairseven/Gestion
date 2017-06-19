@@ -28,7 +28,7 @@ namespace Gestion {
             lstOrdenados.Items.Clear();
             int[] d = new int[20];
             int aux = 0;
-            for (int i = 0; i < 19; i++) {
+            for (int i = 0; i < 20; i++) {
                 d[i] = (int)lstDesordenados.Items[i];
             }
             //metodo burbubja para ordenar arreglos
@@ -42,7 +42,7 @@ namespace Gestion {
                     }
                 }
             }
-            for (int i = 0; i < 19; i++) {
+            for (int i = 0; i < 20; i++) {
                 string o = i.ToString().PadRight(5) + "-" + d[i].ToString().PadLeft(5);
                 lstOrdenados.Items.Add(o);
             }

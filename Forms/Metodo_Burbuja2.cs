@@ -24,9 +24,10 @@ namespace Gestion {
         }
 
         private void btnBurbuja_Click(object sender, EventArgs e) {
+
             lstOrdenados.Items.Clear();
-            int[] d = new int[20]; 
-            for (int i = 0; i < 19; i++) {
+            int[] d = new int[20];
+            for (int i = 0; i < 20; i++) {
                 d[i] = (int)lstDesordenados.Items[i];
             }
             bubble burb = new bubble(d);
@@ -34,7 +35,7 @@ namespace Gestion {
 
 
 
-            for (int i = 0; i < 19; i++) {
+            for (int i = 0; i < 20; i++) {
                 string textito = i.ToString() + " - " + burb.resultado[i].ToString();
 
                 lstOrdenados.Items.Add(textito);

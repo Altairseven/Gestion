@@ -27,4 +27,4 @@ D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Forms.EnClasesForm.resour
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Forms.OwnForm.resources
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Forms.Form1.resources
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Forms.Form2.resources
-D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Metodo_Burbuj2.resources
+D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Metodo_Burbuja2.resources

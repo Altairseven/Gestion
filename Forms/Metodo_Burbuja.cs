@@ -39,7 +39,7 @@ namespace Gestion {
             int aux = 0; //Declaracion de una variable auxiliar.
 
             // Llenamos el Array con los elementos de la primer listbox.
-            for (int i = 0; i < 19; i++) {
+            for (int i = 0; i < 20; i++) {
                 d[i] = (int)lstDesordenados.Items[i];
             }
             // metodo de burbuja en si:
@@ -62,7 +62,7 @@ namespace Gestion {
 
             //A esta altura el array esta ordenado de menor a mayor, ahora vamos a hacer que se muestre en el segundo Listbox
             //con el numero de posicion primero, y luego el valor ej: "0 - 57"
-            for (int i = 0; i < 19; i++) {
+            for (int i = 0; i < 20; i++) {
                 string textito = i.ToString() + " - " + d[i].ToString();
 
                 lstOrdenados.Items.Add(textito);
