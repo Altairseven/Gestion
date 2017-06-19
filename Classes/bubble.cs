@@ -8,38 +8,19 @@ namespace Gestion.Classes {
 
         public int[] resultado;
 
-        //public bubble(int[] array) {
-        //    int aux;
-        //    for (int i = 0; i < array.Length - 1; i++) {
-        //        for (int j = i + 1; j < array.Length; j++) {
-        //            if (array[i] > array[j]) {
-        //                aux = array[i];
-        //                array[i] = array[j];
-        //                array[j] = aux;
-        //            }
-        //        }
-        //    }
-        //    resultado = array;
-        //}
-
-
         public bubble(int[] array) {
             int aux;
-            for (int i = 0; i < array.Length; i++) {
-                for (int j = 0; j < array.Length - 1; j++) {
-                    if (array[j] > array[j + 1]) {
-                        aux = array[j];
-                        array[j] = array[j + 1];
-                        array[j + 1] = aux;
+            for (int i = 0; i < array.Length - 1; i++) {
+                for (int j = i + 1; j < array.Length; j++) {
+                    if (array[i] > array[j]) {
+                        aux = array[i];
+                        array[i] = array[j];
+                        array[j] = aux;
                     }
                 }
             }
-
-
-
             resultado = array;
         }
-
 
         //Leer esto... es una mejor solucion, despues lo implemento.
         //https://stackoverflow.com/questions/9540905/multiple-constructors-with-one-parameter
