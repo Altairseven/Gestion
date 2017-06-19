@@ -33,25 +33,25 @@ namespace Gestion {
             //Lo siguiente es lo que hay que hacer previamente al metodo de burbuja en si:
 
             //Para que cada vez q se aprete, primero limpie el contenido actual de la segunda listbox.
-                    lstOrdenados.Items.Clear();
+            lstOrdenados.Items.Clear();
 
-                    int[] d = new int[20]; //Declaracion de array de 20 numeros int.
-                    int aux = 0; //Declaracion de una variable auxiliar.
+            int[] d = new int[20]; //Declaracion de array de 20 numeros int.
+            int aux = 0; //Declaracion de una variable auxiliar.
 
-                    // Llenamos el Array con los elementos de la primer listbox.
-                    for (int i = 0; i < 19; i++) {
-                        d[i] = (int)lstDesordenados.Items[i];
-                    }
+            // Llenamos el Array con los elementos de la primer listbox.
+            for (int i = 0; i < 19; i++) {
+                d[i] = (int)lstDesordenados.Items[i];
+            }
             // metodo de burbuja en si:
-                //Vamos a usar 2 For Loops anidados, esto es para que siempre compare 1 numero con el que sigue.
-                // ejemplo el index 0 con el 1, el 1 con el 2, el 18 con el 19.
+            //Vamos a usar 2 For Loops anidados, esto es para que siempre compare 1 numero con el que sigue.
+            // ejemplo el index 0 con el 1, el 1 con el 2, el 18 con el 19.
 
             for (int i = 0; i <= 18; i++) { // el primero va a ir desde 0 a 18, osea el anteultimo numero.
                 for (int j = i + 1; j <= 19; j++) { // el segundo va a ir de 1 a 19, osea del segundo al ultimo.
                     if (d[i] > d[j]) { //si el valor del primer index es mayor que el del segundo. 
 
                         //intercambio los valores:
-                        
+
                         aux = d[i];   // Guardas el primero en aux,  
                         d[i] = d[j];  // Asignas el segundo en el primero  
                         d[j] = aux;   // guardas el aux en el segundo.  
@@ -62,14 +62,13 @@ namespace Gestion {
 
             //A esta altura el array esta ordenado de menor a mayor, ahora vamos a hacer que se muestre en el segundo Listbox
             //con el numero de posicion primero, y luego el valor ej: "0 - 57"
-            for (int x = 0; x < 19; x++) {
-                string o = x.ToString() + " - " + d[x].ToString();
-                lstOrdenados.Items.Add(o);
+            for (int i = 0; i < 19; i++) {
+                string textito = i.ToString() + " - " + d[i].ToString();
+
+                lstOrdenados.Items.Add(textito);
             }
         }
 
-        private void mTextBox_Edit1_Enter(object sender, EventArgs e) {
 
-        }
     }
 }

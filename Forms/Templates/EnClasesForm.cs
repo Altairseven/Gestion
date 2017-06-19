@@ -11,6 +11,8 @@ namespace Gestion.Forms {
     public partial class EnClasesForm : Form {
         public EnClasesForm() {
             InitializeComponent();
+
+            
         }
     }
 }

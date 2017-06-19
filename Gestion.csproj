@@ -118,6 +118,7 @@
     <None Include="_config.yml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\bubble.cs" />
     <Compile Include="Classes\Ejemplo_Classes.cs" />
     <Compile Include="Classes\salt_hash.cs" />
     <Compile Include="Components\MTextBox_Edit.cs">
@@ -125,6 +126,24 @@
     </Compile>
     <Compile Include="Components\MTextBox_Edit.Designer.cs">
       <DependentUpon>MTextBox_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Metodo_Burbuj2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Metodo_Burbuj2.Designer.cs">
+      <DependentUpon>Metodo_Burbuj2.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Templates\EnClasesForm.cs">
       <SubType>Form</SubType>
@@ -270,6 +289,12 @@
     <EmbeddedResource Include="Components\FormButton.resx">
       <DependentUpon>FormButton.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\linq_test.resx">
       <DependentUpon>linq_test.cs</DependentUpon>
     </EmbeddedResource>
@@ -278,6 +303,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MaskedTB_Ejemplo.resx">
       <DependentUpon>MaskedTB_Ejemplo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Metodo_Burbuj2.resx">
+      <DependentUpon>Metodo_Burbuj2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Metodo_Burbuja.resx">
       <DependentUpon>Metodo_Burbuja.cs</DependentUpon>

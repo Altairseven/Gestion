@@ -6,26 +6,28 @@ using System.Text;
 namespace Gestion.Classes {
 
     //Ejemplo de una clase como las veniamos trabajando el año pasado:
-    class Clase1 {
+    public class Clase1 {
                 
         int teta;
         public int culo;
 
-        void Metodo1() {
+        public void Metodo1() {
             int culoalcuadrado = Metodo2(culo);
             Metodo3(culoalcuadrado.ToString());
         }
         int Metodo2(int numero) {
             return numero * numero;
         }
+        
         void Metodo3(string valorculo) {
             //Messagebox.Show(valorculo);
         }
 
     }
     class Ejemplo_conClase1 {
-        
-        
+        Clase1 asd = new Clase1();
+       
+
 
 
 
@@ -51,8 +53,8 @@ namespace Gestion.Classes {
         }
     }
     class Ejemplo_conClase2 {
-
-
+        Clase2 pepe = new Clase2();
+        
 
 
 
@@ -121,8 +123,7 @@ namespace Gestion.Classes {
 
     class Ejemplo_conClaseVehiculo {
 
-
-
+        
 
 
 
