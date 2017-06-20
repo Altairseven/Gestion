@@ -26,3 +26,10 @@ D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Forms.Password_Salt_And_H
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Forms.EnClasesForm.resources
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Forms.OwnForm.resources
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Metodo_Burbuja2.resources
+D:\Franco\GitHub\Gestion\bin\Debug\Data\Estadistica.mdf
+D:\Franco\GitHub\Gestion\bin\Debug\Data\Estadistica_log.ldf
+D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Forms.Estadistica_Main.resources
+D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Components.Estadistica.Estadistica_panel.resources
+D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Components.Estadistica.E_panel1.resources
+D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Components.Estadistica.E_panel2.resources
+D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Components.Estadistica.E_Panel3.resources

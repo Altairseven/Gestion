@@ -9,6 +9,7 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -21,7 +22,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -64,6 +64,13 @@
   <ItemGroup>
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
+    <Content Include="Data\Estadistica.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Estadistica_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Estadistica.mdf</DependentUpon>
+    </Content>
     <Content Include="Data\Gestion.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -120,12 +127,43 @@
   <ItemGroup>
     <Compile Include="Classes\bubble.cs" />
     <Compile Include="Classes\Ejemplo_Classes.cs" />
+    <Compile Include="Classes\Func_Estadistica.cs" />
     <Compile Include="Classes\salt_hash.cs" />
+    <Compile Include="Components\Estadistica\Estadistica_panel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Estadistica\Estadistica_panel.Designer.cs">
+      <DependentUpon>Estadistica_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Estadistica\E_panel1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Estadistica\E_panel1.Designer.cs">
+      <DependentUpon>E_panel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Estadistica\E_panel2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Estadistica\E_panel2.Designer.cs">
+      <DependentUpon>E_panel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Estadistica\E_panel3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Estadistica\E_panel3.Designer.cs">
+      <DependentUpon>E_panel3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\MTextBox_Edit.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Components\MTextBox_Edit.Designer.cs">
       <DependentUpon>MTextBox_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Estadistica_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Estadistica_Main.Designer.cs">
+      <DependentUpon>Estadistica_Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Metodo_Burbuja2.cs">
       <SubType>Form</SubType>
@@ -253,6 +291,18 @@
     <Compile Include="Tools.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Components\Estadistica\Estadistica_panel.resx">
+      <DependentUpon>Estadistica_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Estadistica\E_panel1.resx">
+      <DependentUpon>E_panel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Estadistica\E_panel2.resx">
+      <DependentUpon>E_panel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Estadistica\E_panel3.resx">
+      <DependentUpon>E_panel3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ABM_Grilla.resx">
       <DependentUpon>ABM_Grilla.cs</DependentUpon>
     </EmbeddedResource>
@@ -270,6 +320,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ejemplo_separar_par_impar.resx">
       <DependentUpon>ejemplo_separar_par_impar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Estadistica_Main.resx">
+      <DependentUpon>Estadistica_Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Euclides.resx">
       <DependentUpon>Euclides.cs</DependentUpon>

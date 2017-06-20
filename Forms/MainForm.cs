@@ -1,15 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 
 namespace Gestion {
-    public partial class MainForm : Gestion.Forms.EnClasesForm {
+    public partial class MainForm : Gestion.Forms.OwnForm {
         public MainForm() {
             InitializeComponent();
         }
@@ -39,7 +35,7 @@ namespace Gestion {
 
             for (int i = 0; i < forms.Length; i++) {
                 foreach (Type form in forms[i].Formlist) {
-                    if (form.Name != "MainForm" && form.Name != "EnClasesForm" && form.Name != "OwnForm") {
+                    if (forms[1].Exceptions_check(form) == false) {
                         FormButton newbutton = new FormButton(form.Name, form);
                         newbutton.Width = panels[i].Width - 7;
                         panels[i].Controls.Add(newbutton);
@@ -61,28 +57,5 @@ namespace Gestion {
                 ConString = con.ConSrt(false);
             }
         }
-
-
-       /* Metodo Viejo, Buscaba una variable bool en cada form, para identificar en
-          donde ponerlos, true = en el primer flp, false en el segundo, y
-          si no existia en el tercero.
-        
-        private void setup_forms() {
-            Get_Forms1 forms = new Get_Forms1();
-            foreach (Type form in forms.Formlist) {
-                if (form.Name != "MainForm" && form.Name != "StandardForm") {
-                    FormButton newbutton = new FormButton(form.Name, form);
-                    newbutton.Width = FLP1.Width - 7;
-                    if (form.GetProperty("ByMe") == null)
-                        FLP3.Controls.Add(newbutton);
-                    else if ((bool)form.GetProperty("ByMe").GetValue(form, null) == true)
-                        FLP2.Controls.Add(newbutton);
-                    else
-                        FLP1.Controls.Add(newbutton);
-
-                }
-            }
-        }*/
-
     }
 }

@@ -20,6 +20,7 @@ namespace Gestion {
                     Formlist.Add(myType);
             }
         }
+
         public Get_Forms(string target) {
             System.Reflection.Assembly myAssembly = System.Reflection.Assembly.GetEntryAssembly();
             Type[] Types = myAssembly.GetTypes();
@@ -30,6 +31,23 @@ namespace Gestion {
                 if (myType.BaseType.FullName == target)
                     Formlist.Add(myType);
             }
+        }
+
+        public List<string> Exceptions() {
+            List<string> exceptions = new List<string>();
+                exceptions.Add("MainForm");
+                exceptions.Add("EnClasesForm");
+                exceptions.Add("OwnForm");
+                exceptions.Add("MainForm");
+            return exceptions;
+        }
+
+        public bool Exceptions_check(Type formToCheck) {
+            foreach (string name in Exceptions()) {
+                if (formToCheck.Name == name)
+                    return true;
+            }
+            return false;
         }
     }
 }

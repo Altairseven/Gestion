@@ -144,6 +144,7 @@
             this.ClientSize = new System.Drawing.Size(661, 437);
             this.Controls.Add(this.FLPMain);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm";
             this.Text = "Proyecto Gestion";
             this.Load += new System.EventHandler(this.MainForm_Load);
