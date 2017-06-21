@@ -35,15 +35,40 @@ namespace Gestion.Components.Estadistica {
             DataTable cuadro = new DataTable();
             currentdata.Tables.Add(cuadro);
             dataGridView1.DataSource = cuadro;
-            cuadro.Columns.Add("(Xi)",typeof(Int32));
-            cuadro.Columns.Add("(fi)", typeof(Int32));
+            cuadro.Columns.Add("(Xi)",typeof(Decimal));
+            cuadro.Columns.Add("(fi)", typeof(Decimal));
             debugfill(cuadro);
             
         }
 
         private void button1_Click(object sender, EventArgs e) {
+            Decimal N = est.Get_N(((DataRowView)dataGridView1.Rows[0].DataBoundItem).DataView.Table);
             DataTable Fi = est.Freq_Acum(((DataRowView)dataGridView1.Rows[0].DataBoundItem).DataView.Table);
             dataGridView1.DataSource = Fi;
+            mTextBox_Edit1.Text = N.ToString();
+            button2.Enabled = true;
+        }
+
+        private void button2_Click(object sender, EventArgs e) {
+
+            
+            DataTable hi = est.Freq_R(((DataRowView)dataGridView1.Rows[0].DataBoundItem).DataView.Table,
+                                    est.Get_N(((DataRowView)dataGridView1.Rows[0].DataBoundItem).DataView.Table));
+            dataGridView1.DataSource = hi;
+            Decimal h = est.Get_S_hi(((DataRowView)dataGridView1.Rows[0].DataBoundItem).DataView.Table);
+            mTextBox_Edit2.Text = h.ToString();
+            button4.Enabled = true;
+        }
+
+        private void button4_Click(object sender, EventArgs e) {
+            DataTable Hi = est.Freq_R_Acum(((DataRowView)dataGridView1.Rows[0].DataBoundItem).DataView.Table);
+            dataGridView1.DataSource = Hi;
+            groupBox2.Enabled = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e) {
+            decimal media = est.Get_Media(((DataRowView)dataGridView1.Rows[0].DataBoundItem).DataView.Table);
+            mTextBox_Edit3.Text = media.ToString();
         }
     }
 }
