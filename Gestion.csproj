@@ -79,6 +79,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Icon.ico" />
+    <None Include="Resources\layers.png" />
+    <None Include="Resources\sign-error.png" />
+    <None Include="Resources\pencil.png" />
+    <None Include="Resources\floppy1.png" />
+    <None Include="Resources\floppy.png" />
+    <None Include="Resources\Profile blurred.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".git\config" />
@@ -158,6 +164,12 @@
     </Compile>
     <Compile Include="Components\MTextBox_Edit.Designer.cs">
       <DependentUpon>MTextBox_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DD_arbolMenu_Propio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DD_arbolMenu_Propio.Designer.cs">
+      <DependentUpon>DD_arbolMenu_Propio.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Estadistica_Main.cs">
       <SubType>Form</SubType>
@@ -283,6 +295,11 @@
     <Compile Include="Forms\Prueba_ado2.Designer.cs">
       <DependentUpon>Prueba_ado2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -314,6 +331,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\calculo_potencia.resx">
       <DependentUpon>calculo_potencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DD_arbolMenu_Propio.resx">
+      <DependentUpon>DD_arbolMenu_Propio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ejemplo_for.resx">
       <DependentUpon>ejemplo_for.cs</DependentUpon>
@@ -354,7 +374,10 @@
     <EmbeddedResource Include="Forms\Templates\OwnForm.resx">
       <DependentUpon>OwnForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Prueba_ado.resx">
       <DependentUpon>Prueba_ado.cs</DependentUpon>
     </EmbeddedResource>

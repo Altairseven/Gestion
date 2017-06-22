@@ -33,3 +33,4 @@ D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Prueba_ado2.resources
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.csproj.GenerateResource.Cache
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\WindowsApplication.exe
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\WindowsApplication.pdb
+D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Forms.DD_arbolMenu_Propio.resources
