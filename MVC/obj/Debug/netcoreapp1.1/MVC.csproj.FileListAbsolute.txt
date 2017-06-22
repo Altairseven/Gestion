@@ -1,9 +1,0 @@
-D:\Franco\GitHub\Gestion\Gestion\MVC\bin\Debug\netcoreapp1.1\MVC.deps.json
-D:\Franco\GitHub\Gestion\Gestion\MVC\bin\Debug\netcoreapp1.1\MVC.runtimeconfig.json
-D:\Franco\GitHub\Gestion\Gestion\MVC\bin\Debug\netcoreapp1.1\MVC.runtimeconfig.dev.json
-D:\Franco\GitHub\Gestion\Gestion\MVC\bin\Debug\netcoreapp1.1\MVC.dll
-D:\Franco\GitHub\Gestion\Gestion\MVC\bin\Debug\netcoreapp1.1\MVC.pdb
-D:\Franco\GitHub\Gestion\Gestion\MVC\obj\Debug\netcoreapp1.1\MVC.csprojResolveAssemblyReference.cache
-D:\Franco\GitHub\Gestion\Gestion\MVC\obj\Debug\netcoreapp1.1\MVC.AssemblyInfo.cs
-D:\Franco\GitHub\Gestion\Gestion\MVC\obj\Debug\netcoreapp1.1\MVC.dll
-D:\Franco\GitHub\Gestion\Gestion\MVC\obj\Debug\netcoreapp1.1\MVC.pdb
