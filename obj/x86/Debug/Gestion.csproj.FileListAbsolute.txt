@@ -34,3 +34,5 @@ D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.csproj.GenerateResource.C
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\WindowsApplication.exe
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\WindowsApplication.pdb
 D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Forms.DD_arbolMenu_Propio.resources
+D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Components.UserControl1.resources
+D:\Franco\GitHub\Gestion\Gestion\obj\x86\Debug\Gestion.Forms.Metodo_Burbuja_Modular.resources

@@ -55,6 +55,7 @@ namespace Gestion {
             // Llenamos el Array con los elementos de la primer listbox.
             for (int i = 0; i <= 19; i++) {
                 d[i] = (int)lstDesordenados.Items[i];
+                
             }   // d[i] = Convert.ToInt32(lstDesordenados.Items[i]);
             // metodo de burbuja en si:
             //Vamos a usar 2 For Loops anidados, esto es para que siempre compare 1 numero con el que sigue.
