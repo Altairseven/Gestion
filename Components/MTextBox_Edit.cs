@@ -14,9 +14,10 @@ namespace Gestion.Components {
 
         }
         private void keydownevent(object sender, KeyEventArgs e) {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter) {
                 SendKeys.Send("{TAB}");
-
+                e.SuppressKeyPress = true;
+            }
         }
         private void OnEnter(object sender, EventArgs e) {
                 this.SelectAll();
