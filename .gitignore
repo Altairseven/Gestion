@@ -6,3 +6,5 @@ bin/*.*
 obj/*.*
 .vs/Gestion/v15/.suo
 .vs/Gestion/v15/.suo
+.vs/Gestion/v15/.suo
+*.cache
