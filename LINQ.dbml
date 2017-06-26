@@ -51,4 +51,16 @@
       <Column Name="importe" Type="System.Decimal" DbType="Money" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="NChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="user_fullname" Type="System.String" DbType="NChar(24)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="salt" Type="System.String" DbType="NChar(24) NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="NChar(24)" CanBeNull="true" />
+      <Column Name="usertype" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="lastlogin" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+    </Type>
+  </Table>
 </Database>

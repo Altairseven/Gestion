@@ -45,6 +45,9 @@ namespace Gestion
     partial void Insertpedido(pedido instance);
     partial void Updatepedido(pedido instance);
     partial void Deletepedido(pedido instance);
+    partial void InsertUser(User instance);
+    partial void UpdateUser(User instance);
+    partial void DeleteUser(User instance);
     #endregion
 		
 		public LINQDataContext() : 
@@ -114,6 +117,14 @@ namespace Gestion
 			get
 			{
 				return this.GetTable<pedido>();
+			}
+		}
+		
+		public System.Data.Linq.Table<User> Users
+		{
+			get
+			{
+				return this.GetTable<User>();
 			}
 		}
 	}
@@ -1027,6 +1038,236 @@ namespace Gestion
 					this._importe = value;
 					this.SendPropertyChanged("importe");
 					this.OnimporteChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Users")]
+	public partial class User : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private string _username;
+		
+		private string _user_fullname;
+		
+		private string _password;
+		
+		private string _salt;
+		
+		private string _email;
+		
+		private string _usertype;
+		
+		private System.Nullable<System.TimeSpan> _lastlogin;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnusernameChanging(string value);
+    partial void OnusernameChanged();
+    partial void Onuser_fullnameChanging(string value);
+    partial void Onuser_fullnameChanged();
+    partial void OnpasswordChanging(string value);
+    partial void OnpasswordChanged();
+    partial void OnsaltChanging(string value);
+    partial void OnsaltChanged();
+    partial void OnemailChanging(string value);
+    partial void OnemailChanged();
+    partial void OnusertypeChanging(string value);
+    partial void OnusertypeChanged();
+    partial void OnlastloginChanging(System.Nullable<System.TimeSpan> value);
+    partial void OnlastloginChanged();
+    #endregion
+		
+		public User()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_username", DbType="NChar(16) NOT NULL", CanBeNull=false)]
+		public string username
+		{
+			get
+			{
+				return this._username;
+			}
+			set
+			{
+				if ((this._username != value))
+				{
+					this.OnusernameChanging(value);
+					this.SendPropertyChanging();
+					this._username = value;
+					this.SendPropertyChanged("username");
+					this.OnusernameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_user_fullname", DbType="NChar(24)")]
+		public string user_fullname
+		{
+			get
+			{
+				return this._user_fullname;
+			}
+			set
+			{
+				if ((this._user_fullname != value))
+				{
+					this.Onuser_fullnameChanging(value);
+					this.SendPropertyChanging();
+					this._user_fullname = value;
+					this.SendPropertyChanged("user_fullname");
+					this.Onuser_fullnameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_password", DbType="NChar(50) NOT NULL", CanBeNull=false)]
+		public string password
+		{
+			get
+			{
+				return this._password;
+			}
+			set
+			{
+				if ((this._password != value))
+				{
+					this.OnpasswordChanging(value);
+					this.SendPropertyChanging();
+					this._password = value;
+					this.SendPropertyChanged("password");
+					this.OnpasswordChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_salt", DbType="NChar(24) NOT NULL", CanBeNull=false)]
+		public string salt
+		{
+			get
+			{
+				return this._salt;
+			}
+			set
+			{
+				if ((this._salt != value))
+				{
+					this.OnsaltChanging(value);
+					this.SendPropertyChanging();
+					this._salt = value;
+					this.SendPropertyChanged("salt");
+					this.OnsaltChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_email", DbType="NChar(24)")]
+		public string email
+		{
+			get
+			{
+				return this._email;
+			}
+			set
+			{
+				if ((this._email != value))
+				{
+					this.OnemailChanging(value);
+					this.SendPropertyChanging();
+					this._email = value;
+					this.SendPropertyChanged("email");
+					this.OnemailChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_usertype", DbType="NChar(10)")]
+		public string usertype
+		{
+			get
+			{
+				return this._usertype;
+			}
+			set
+			{
+				if ((this._usertype != value))
+				{
+					this.OnusertypeChanging(value);
+					this.SendPropertyChanging();
+					this._usertype = value;
+					this.SendPropertyChanged("usertype");
+					this.OnusertypeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_lastlogin", DbType="Time")]
+		public System.Nullable<System.TimeSpan> lastlogin
+		{
+			get
+			{
+				return this._lastlogin;
+			}
+			set
+			{
+				if ((this._lastlogin != value))
+				{
+					this.OnlastloginChanging(value);
+					this.SendPropertyChanging();
+					this._lastlogin = value;
+					this.SendPropertyChanged("lastlogin");
+					this.OnlastloginChanged();
 				}
 			}
 		}
