@@ -179,6 +179,12 @@
     <Compile Include="Components\UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Algoritmos_Ordenamiento_Arrays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Algoritmos_Ordenamiento_Arrays.Designer.cs">
+      <DependentUpon>Algoritmos_Ordenamiento_Arrays.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DD_arbolMenu_Propio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +232,9 @@
     </Compile>
     <Compile Include="Forms\Templates\OwnForm.Designer.cs">
       <DependentUpon>OwnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ.cs">
+      <DependentUpon>LINQ.dbml</DependentUpon>
     </Compile>
     <Compile Include="LINQ.designer.cs">
       <AutoGen>True</AutoGen>
@@ -351,6 +360,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ABM_Grilla.resx">
       <DependentUpon>ABM_Grilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Algoritmos_Ordenamiento_Arrays.resx">
+      <DependentUpon>Algoritmos_Ordenamiento_Arrays.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Busqueda_Dicotomica.resx">
       <DependentUpon>Busqueda_Dicotomica.cs</DependentUpon>

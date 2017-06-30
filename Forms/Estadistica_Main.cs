@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using Gestion.Components.Estadistica;
 
 namespace Gestion.Forms {
-    public partial class Estadistica_Main : Form {
+    public partial class Estadistica_Main : OwnForm {
         public Estadistica_Main() {
             InitializeComponent();
         }
