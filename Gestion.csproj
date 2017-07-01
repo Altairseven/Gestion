@@ -138,6 +138,7 @@
     <None Include="_config.yml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\ArraySorting.cs" />
     <Compile Include="Classes\bubble.cs" />
     <Compile Include="Classes\Ejemplo_Classes.cs" />
     <Compile Include="Classes\Func_Estadistica.cs" />
