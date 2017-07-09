@@ -50,6 +50,9 @@
   <PropertyGroup>
     <ApplicationIcon>Data\Icon.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Data.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -61,6 +64,7 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
@@ -83,6 +87,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Icon.ico" />
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <EmbeddedResource Include="Data\Services.list" />
     <None Include="Resources\profile.png" />
     <None Include="Resources\address-book-alt.png" />
     <None Include="Resources\address-book-alt-icon.png" />
@@ -142,8 +150,10 @@
     <Compile Include="Classes\bubble.cs" />
     <Compile Include="Classes\Ejemplo_Classes.cs" />
     <Compile Include="Classes\Func_Estadistica.cs" />
+    <Compile Include="Classes\listapotente.cs" />
     <Compile Include="Classes\Login_func.cs" />
     <Compile Include="Classes\salt_hash.cs" />
+    <Compile Include="Classes\Service_Control.cs" />
     <Compile Include="Components\Estadistica\Estadistica_panel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -198,6 +208,12 @@
     <Compile Include="Forms\Estadistica_Main.Designer.cs">
       <DependentUpon>Estadistica_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\File_R_W.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\File_R_W.Designer.cs">
+      <DependentUpon>File_R_W.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +231,18 @@
     </Compile>
     <Compile Include="Forms\Metodo_Burbuja2.Designer.cs">
       <DependentUpon>Metodo_Burbuja2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MS SQL Server Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MS SQL Server Control.Designer.cs">
+      <DependentUpon>MS SQL Server Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Suck It Java.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Suck It Java.Designer.cs">
+      <DependentUpon>Suck It Java.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Templates\EnClasesForm.cs">
       <SubType>Form</SubType>
@@ -392,6 +420,9 @@
     <EmbeddedResource Include="Components\FormButton.resx">
       <DependentUpon>FormButton.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\File_R_W.resx">
+      <DependentUpon>File_R_W.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -412,6 +443,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Metodo_Burbuja.resx">
       <DependentUpon>Metodo_Burbuja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MS SQL Server Control.resx">
+      <DependentUpon>MS SQL Server Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Suck It Java.resx">
+      <DependentUpon>Suck It Java.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Templates\EnClasesForm.resx">
       <DependentUpon>EnClasesForm.cs</DependentUpon>

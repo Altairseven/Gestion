@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Gestion.Classes;
 
 namespace Gestion.Forms {
     public partial class Algoritmos_Ordenamiento_Arrays : OwnForm {
@@ -25,6 +26,9 @@ namespace Gestion.Forms {
 
         private void Algoritmos_Ordenamiento_Arrays_Load(object sender, EventArgs e) {
             On_tab_change();
+            listapotente l = new listapotente(1,"a",2f);
+            
+            
         }
 
         private void Random_gen(ListBox list, int count, int from, int to) {
@@ -60,14 +64,14 @@ namespace Gestion.Forms {
 
                 
                 switch (currenttab) {
-                    case 0: arr = Classes.ArraySorting.Bubble(arr); break;
-                    case 1: arr = Classes.ArraySorting.QuickSort(arr); break;
-                    case 2: arr = Classes.ArraySorting.HeapSort(arr); break;
-                    case 3: arr = Classes.ArraySorting.InsertionSort(arr); break;
+                    case 0: arr = ArraySorting.Bubble(arr); break;
+                    case 1: arr = ArraySorting.QuickSort(arr); break;
+                    case 2: arr = ArraySorting.HeapSort(arr); break;
+                    case 3: arr = ArraySorting.InsertionSort(arr); break;
                 }
                     foreach (int a in arr)
                         listBox2.Items.Add(a.ToString());
-                
+
             }
 
         }

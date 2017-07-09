@@ -52,11 +52,14 @@
             // 
             // FLP1
             // 
+            this.FLP1.AutoScroll = true;
             this.FLP1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FLP1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.FLP1.Location = new System.Drawing.Point(3, 16);
             this.FLP1.Name = "FLP1";
             this.FLP1.Size = new System.Drawing.Size(206, 378);
             this.FLP1.TabIndex = 0;
+            this.FLP1.WrapContents = false;
             // 
             // GB2
             // 
@@ -70,11 +73,14 @@
             // 
             // FLP2
             // 
+            this.FLP2.AutoScroll = true;
             this.FLP2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FLP2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.FLP2.Location = new System.Drawing.Point(3, 16);
             this.FLP2.Name = "FLP2";
             this.FLP2.Size = new System.Drawing.Size(206, 378);
             this.FLP2.TabIndex = 1;
+            this.FLP2.WrapContents = false;
             // 
             // GB3
             // 

@@ -35,9 +35,12 @@ namespace Gestion {
 
             for (int i = 0; i < forms.Length; i++) {
                 foreach (Type form in forms[i].Formlist) {
-                    if (forms[1].Exceptions_check(form) == false) {
+                    if (forms[i].Exceptions_check(form) == false) {
                         FormButton newbutton = new FormButton(form.Name, form);
-                        newbutton.Width = panels[i].Width - 7;
+                        if (forms[i].Formlist.Count > 10)
+                            newbutton.Width = panels[i].Width - 27;
+                        else
+                            newbutton.Width = panels[i].Width - 7;
                         panels[i].Controls.Add(newbutton);
                     }
                     

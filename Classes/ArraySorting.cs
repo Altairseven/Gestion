@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 
 namespace Gestion.Classes {
-    class ArraySorting {//Diferentes Metodos para Ordenar Arrays (aplicados a numeros)
+     static class ArraySorting {//Diferentes Metodos para Ordenar Arrays (aplicados a numeros)
 
         //Metodo de Burbuja: https://en.wikipedia.org/wiki/Bubble_sort.
 
