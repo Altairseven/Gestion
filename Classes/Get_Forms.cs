@@ -5,7 +5,7 @@ using System.Collections.Generic;
 //Assembly, en vez de System.Reflection.Assembly
 
 namespace Gestion {
-    class Get_Forms {
+    public class Get_Forms {
         
         public List<Type> Formlist = new List<Type>();
 
@@ -33,7 +33,7 @@ namespace Gestion {
             }
         }
 
-        public List<string> Exceptions() {
+        public virtual List<string> Exceptions() {
             List<string> exceptions = new List<string>();
                 exceptions.Add("MainForm");
                 exceptions.Add("EnClasesForm");

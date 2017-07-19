@@ -72,6 +72,13 @@ namespace Gestion.Forms {
         private void button2_Click(object sender, EventArgs e) {
             Init_List(3);
         }
+
+        private void button3_Click(object sender, EventArgs e) {
+            List<Service_Control.ServiceInfo> a = Service_Control.GetServices();
+            foreach (Service_Control.ServiceInfo service in a) {
+                listBox1.Items.Add(service.SDisplayName);
+            }
+        }
     }
         
     

@@ -18,6 +18,18 @@ namespace Gestion.Classes {
                 SName = _name;
             }
         }
+
+        public static List<ServiceInfo> GetServices() {
+            List<ServiceInfo> List = new List<ServiceInfo>();
+            ServiceController[] services = ServiceController.GetServices();
+            foreach (ServiceController service in services) {
+                ServiceInfo a = new ServiceInfo(service.ServiceName);
+                a.SDisplayName = service.DisplayName;
+                List.Add(a);
+            }
+            return List;
+        }
+
         public static ServiceInfo ServiceStatus(ServiceInfo a) {
                 try {
                     ServiceController service = new ServiceController(a.SName);
