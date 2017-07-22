@@ -13,6 +13,16 @@ namespace Gestion.Forms {
         public Estadistica_Main() {
             InitializeComponent();
         }
+
+        #region Descripcion (Para Mostrar en MainForm).
+        private static string descripcion =
+            "Permite Armar tabla de frecuencias, y calcular las formulas comunmente usadas." +
+            Environment.NewLine + Environment.NewLine +
+            "Sirve con Variables agrupadas, no agrupadas, y bidimensionales.";
+
+        public static string Descripcion { get { return descripcion; } }
+        #endregion
+
         Estadistica_panel panel;
 
         void panelsetup(int paneltype) {

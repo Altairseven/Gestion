@@ -23,82 +23,19 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.GB1 = new System.Windows.Forms.GroupBox();
-            this.FLP1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.GB2 = new System.Windows.Forms.GroupBox();
-            this.FLP2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.GB3 = new System.Windows.Forms.GroupBox();
-            this.FLP3 = new System.Windows.Forms.FlowLayoutPanel();
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Formularios Hechos en Clase");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Formularios Hechos por Mi");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Formularios Nuevos");
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.conectarAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.FLPMain = new System.Windows.Forms.FlowLayoutPanel();
-            this.GB1.SuspendLayout();
-            this.GB2.SuspendLayout();
-            this.GB3.SuspendLayout();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
-            this.FLPMain.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // GB1
-            // 
-            this.GB1.Controls.Add(this.FLP1);
-            this.GB1.Location = new System.Drawing.Point(3, 3);
-            this.GB1.Name = "GB1";
-            this.GB1.Size = new System.Drawing.Size(212, 397);
-            this.GB1.TabIndex = 0;
-            this.GB1.TabStop = false;
-            this.GB1.Text = "Forms Hechos en Clase";
-            // 
-            // FLP1
-            // 
-            this.FLP1.AutoScroll = true;
-            this.FLP1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FLP1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.FLP1.Location = new System.Drawing.Point(3, 16);
-            this.FLP1.Name = "FLP1";
-            this.FLP1.Size = new System.Drawing.Size(206, 378);
-            this.FLP1.TabIndex = 0;
-            this.FLP1.WrapContents = false;
-            // 
-            // GB2
-            // 
-            this.GB2.Controls.Add(this.FLP2);
-            this.GB2.Location = new System.Drawing.Point(221, 3);
-            this.GB2.Name = "GB2";
-            this.GB2.Size = new System.Drawing.Size(212, 397);
-            this.GB2.TabIndex = 1;
-            this.GB2.TabStop = false;
-            this.GB2.Text = "Forms Propios";
-            // 
-            // FLP2
-            // 
-            this.FLP2.AutoScroll = true;
-            this.FLP2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FLP2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.FLP2.Location = new System.Drawing.Point(3, 16);
-            this.FLP2.Name = "FLP2";
-            this.FLP2.Size = new System.Drawing.Size(206, 378);
-            this.FLP2.TabIndex = 1;
-            this.FLP2.WrapContents = false;
-            // 
-            // GB3
-            // 
-            this.GB3.Controls.Add(this.FLP3);
-            this.GB3.Location = new System.Drawing.Point(439, 3);
-            this.GB3.Name = "GB3";
-            this.GB3.Size = new System.Drawing.Size(212, 397);
-            this.GB3.TabIndex = 2;
-            this.GB3.TabStop = false;
-            this.GB3.Text = "Sin Clasificar";
-            // 
-            // FLP3
-            // 
-            this.FLP3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FLP3.Location = new System.Drawing.Point(3, 16);
-            this.FLP3.Name = "FLP3";
-            this.FLP3.Size = new System.Drawing.Size(206, 378);
-            this.FLP3.TabIndex = 1;
             // 
             // menuStrip1
             // 
@@ -109,7 +46,7 @@
             this.conectarAToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(661, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(574, 27);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -130,52 +67,101 @@
             this.conectarAToolStripMenuItem.Text = "Conectar A:";
             this.conectarAToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // FLPMain
+            // treeView1
             // 
-            this.FLPMain.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.FLPMain.BackColor = System.Drawing.Color.Transparent;
-            this.FLPMain.Controls.Add(this.GB1);
-            this.FLPMain.Controls.Add(this.GB2);
-            this.FLPMain.Controls.Add(this.GB3);
-            this.FLPMain.Location = new System.Drawing.Point(2, 28);
-            this.FLPMain.Name = "FLPMain";
-            this.FLPMain.Size = new System.Drawing.Size(657, 400);
-            this.FLPMain.TabIndex = 4;
+            this.treeView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.treeView1.Location = new System.Drawing.Point(12, 43);
+            this.treeView1.Name = "treeView1";
+            treeNode1.Name = "Node0";
+            treeNode1.Text = "Formularios Hechos en Clase";
+            treeNode2.Name = "Node1";
+            treeNode2.Text = "Formularios Hechos por Mi";
+            treeNode3.Name = "Node2";
+            treeNode3.Text = "Formularios Nuevos";
+            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3});
+            this.treeView1.Size = new System.Drawing.Size(242, 434);
+            this.treeView1.TabIndex = 5;
+            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
+            this.treeView1.DoubleClick += new System.EventHandler(this.treeView1_DoubleClick);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox1.Location = new System.Drawing.Point(269, 43);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(293, 381);
+            this.textBox1.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(9, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Formularios:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(266, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Descripción:";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(469, 436);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 41);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Abrir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(661, 437);
-            this.Controls.Add(this.FLPMain);
+            this.ClientSize = new System.Drawing.Size(574, 489);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.treeView1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = true;
+            this.MinimizeBox = true;
             this.Name = "MainForm";
             this.Text = "Proyecto Gestion";
             this.Load += new System.EventHandler(this.MainForm_Load);
-            this.GB1.ResumeLayout(false);
-            this.GB2.ResumeLayout(false);
-            this.GB3.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.FLPMain.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox GB1;
-        private System.Windows.Forms.GroupBox GB2;
-        private System.Windows.Forms.GroupBox GB3;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
         private System.Windows.Forms.ToolStripMenuItem conectarAToolStripMenuItem;
-        private System.Windows.Forms.FlowLayoutPanel FLP1;
-        private System.Windows.Forms.FlowLayoutPanel FLP2;
-        private System.Windows.Forms.FlowLayoutPanel FLP3;
-        private System.Windows.Forms.FlowLayoutPanel FLPMain;
+        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }

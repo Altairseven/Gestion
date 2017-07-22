@@ -76,6 +76,7 @@
     <Reference Include="DevExpress.Utils.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -208,6 +209,12 @@
     <Compile Include="Components\UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AA Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AA Test.Designer.cs">
+      <DependentUpon>AA Test.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Algoritmos_Ordenamiento_Arrays.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +232,12 @@
     </Compile>
     <Compile Include="Forms\Estadistica_Main.Designer.cs">
       <DependentUpon>Estadistica_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Fibonachi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Fibonachi.Designer.cs">
+      <DependentUpon>Fibonachi.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\File_R_W.cs">
       <SubType>Form</SubType>
@@ -437,6 +450,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\FormButton.resx">
       <DependentUpon>FormButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Fibonachi.resx">
+      <DependentUpon>Fibonachi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\File_R_W.resx">
       <DependentUpon>File_R_W.cs</DependentUpon>

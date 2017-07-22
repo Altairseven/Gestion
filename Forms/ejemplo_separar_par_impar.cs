@@ -16,6 +16,14 @@ namespace Gestion
             InitializeComponent();
         }
 
+        #region Descripcion (Para Mostrar en MainForm).
+        private static string descripcion =
+            "A partir de una lista de Numeros Randoms, divide los pares, " +
+            "y los impares en diferentes listas.";
+
+        public static string Descripcion { get { return descripcion; } }
+        #endregion
+
         private void ejemplo_separar_par_impar_Load(object sender, EventArgs e)
         {
             Random r = new Random();

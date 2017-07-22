@@ -5,6 +5,20 @@ using System.Collections.Generic;
 //Assembly, en vez de System.Reflection.Assembly
 
 namespace Gestion {
+    public class FormData {
+
+        public int CatId;
+        public string FormName;
+        public string FormTypeName;
+
+        public FormData(int _catId, string _formName, string _formTypeName) {
+            CatId = _catId;
+            FormName = _formName;
+            FormTypeName = _formTypeName;
+
+        }
+    }
+
     public class Get_Forms {
         
         public List<Type> Formlist = new List<Type>();

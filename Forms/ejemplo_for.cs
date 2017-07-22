@@ -19,6 +19,13 @@ namespace Gestion
             InitializeComponent();
         }
 
+        #region Descripcion (Para Mostrar en MainForm).
+        private static string descripcion =
+            "Ejemplo Simple de un For Loop";
+
+        public static string Descripcion { get { return descripcion; } }
+        #endregion
+
         private void btn_calc_Click(object sender, EventArgs e)
         {
             int num = Convert.ToInt32(this.txt_num.Text);
