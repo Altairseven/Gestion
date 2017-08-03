@@ -221,6 +221,12 @@
     <Compile Include="Forms\Algoritmos_Ordenamiento_Arrays.Designer.cs">
       <DependentUpon>Algoritmos_Ordenamiento_Arrays.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\culo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\culo.Designer.cs">
+      <DependentUpon>culo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DD_arbolMenu_Propio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,6 +238,12 @@
     </Compile>
     <Compile Include="Forms\Estadistica_Main.Designer.cs">
       <DependentUpon>Estadistica_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ExperimentoUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ExperimentoUI.Designer.cs">
+      <DependentUpon>ExperimentoUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Fibonachi.cs">
       <SubType>Form</SubType>
@@ -450,6 +462,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\FormButton.resx">
       <DependentUpon>FormButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExperimentoUI.resx">
+      <DependentUpon>ExperimentoUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Fibonachi.resx">
       <DependentUpon>Fibonachi.cs</DependentUpon>
